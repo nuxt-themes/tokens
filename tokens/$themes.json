@@ -2,7 +2,11 @@
   {
     "id": "25c003ad5e5d60aea6f8c6186e45029ba7ae6f09",
     "name": "Elements",
-    "selectedTokenSets": {},
+    "selectedTokenSets": {
+      "Base/colors": "source",
+      "Base/core": "source",
+      "Base/typography": "source"
+    },
     "$figmaStyleReferences": {
       "neutral.white": "S:76105059f1e72ed4643dd3e97d9e4c99551531ec,",
       "neutral.black": "S:ae978e7c993133456540bf8c8dca15e442838ca4,",
