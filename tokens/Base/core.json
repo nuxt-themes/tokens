@@ -148,5 +148,35 @@
       "type": "borderRadius",
       "description": "A very large value to handle every cases"
     }
+  },
+  "sizings": {
+    "size-24": {
+      "value": "24px",
+      "type": "sizing"
+    },
+    "size-32": {
+      "value": "32px",
+      "type": "sizing"
+    },
+    "size-40": {
+      "value": "40px",
+      "type": "sizing"
+    },
+    "size-48": {
+      "value": "48px",
+      "type": "sizing"
+    },
+    "size-56": {
+      "value": "56px",
+      "type": "sizing"
+    },
+    "size-64": {
+      "value": "64px",
+      "type": "sizing"
+    },
+    "size-80": {
+      "value": "80px",
+      "type": "sizing"
+    }
   }
 }
