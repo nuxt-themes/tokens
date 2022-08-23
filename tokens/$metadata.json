@@ -1,7 +1,5 @@
 {
   "tokenSetOrder": [
-    "Base",
-    "Light",
-    "Dark"
+    "template"
   ]
 }
