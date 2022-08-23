@@ -1,1 +1,42 @@
-{}
+{
+  "xxs": {
+    "value": "0.125rem",
+    "type": "borderRadius",
+    "description": "2px"
+  },
+  "xs": {
+    "value": "0.25rem",
+    "type": "borderRadius",
+    "description": "4px"
+  },
+  "sm": {
+    "value": "0.375rem",
+    "type": "borderRadius",
+    "description": "6px"
+  },
+  "base": {
+    "value": "0.5rem",
+    "type": "borderRadius",
+    "description": "8px"
+  },
+  "md": {
+    "value": "0.75rem",
+    "type": "borderRadius",
+    "description": "12px"
+  },
+  "lg": {
+    "value": "1rem",
+    "type": "borderRadius",
+    "description": "16px"
+  },
+  "xl": {
+    "value": "1.5rem",
+    "type": "borderRadius",
+    "description": "24px"
+  },
+  "full": {
+    "value": "9999px",
+    "type": "borderRadius",
+    "description": "Very big value to handle every cases"
+  }
+}
