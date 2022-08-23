@@ -1,5 +1,12 @@
 {
   "tokenSetOrder": [
-    "template"
+    "Base/colors",
+    "Base/core",
+    "Base/typography",
+    "Themes/alpine/colors",
+    "Themes/alpine/typography",
+    "Themes/docus/colors",
+    "Themes/docus/customRadiuses",
+    "Themes/docus/typography"
   ]
 }
