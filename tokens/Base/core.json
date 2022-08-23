@@ -243,5 +243,35 @@
       "value": "3px",
       "type": "borderWidth"
     }
+  },
+  "opacity": {
+    "no-opacity": {
+      "value": "0",
+      "type": "opacity"
+    },
+    "bright": {
+      "value": "0.1",
+      "type": "opacity"
+    },
+    "light": {
+      "value": "0.15",
+      "type": "opacity"
+    },
+    "soft": {
+      "value": "0.3",
+      "type": "opacity"
+    },
+    "medium": {
+      "value": "0.5",
+      "type": "opacity"
+    },
+    "high": {
+      "value": "0.8",
+      "type": "opacity"
+    },
+    "total": {
+      "value": "1",
+      "type": "opacity"
+    }
   }
 }
