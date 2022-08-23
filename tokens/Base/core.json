@@ -225,5 +225,23 @@
       "value": "200px",
       "type": "spacing"
     }
+  },
+  "borderWidth": {
+    "no-border": {
+      "value": "0",
+      "type": "borderWidth"
+    },
+    "small": {
+      "value": "1px",
+      "type": "borderWidth"
+    },
+    "base": {
+      "value": "2px",
+      "type": "borderWidth"
+    },
+    "large": {
+      "value": "3px",
+      "type": "borderWidth"
+    }
   }
 }
