@@ -178,5 +178,52 @@
       "value": "80px",
       "type": "sizing"
     }
+  },
+  "spacings": {
+    "nospace": {
+      "value": "0",
+      "type": "spacing",
+      "description": "erase current value"
+    },
+    "space-4": {
+      "value": "4px",
+      "type": "spacing"
+    },
+    "space-8": {
+      "value": "8px",
+      "type": "spacing"
+    },
+    "space-16": {
+      "value": "16px",
+      "type": "spacing"
+    },
+    "space-24": {
+      "value": "24px",
+      "type": "spacing"
+    },
+    "space-32": {
+      "value": "32px",
+      "type": "spacing"
+    },
+    "space-48": {
+      "value": "48px",
+      "type": "spacing"
+    },
+    "space-64": {
+      "value": "64px",
+      "type": "spacing"
+    },
+    "space-80": {
+      "value": "80px",
+      "type": "spacing"
+    },
+    "space-104": {
+      "value": "104px",
+      "type": "spacing"
+    },
+    "space-200": {
+      "value": "200px",
+      "type": "spacing"
+    }
   }
 }
