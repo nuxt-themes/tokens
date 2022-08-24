@@ -150,6 +150,14 @@
     }
   },
   "sizings": {
+    "size-16": {
+      "value": "16px",
+      "type": "sizing"
+    },
+    "size-12": {
+      "value": "12px",
+      "type": "sizing"
+    },
     "size-24": {
       "value": "24px",
       "type": "sizing"
