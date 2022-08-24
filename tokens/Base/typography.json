@@ -135,5 +135,31 @@
       "value": "0.1em",
       "type": "letterSpacing"
     }
+  },
+  "leading": {
+    "none": {
+      "value": "1rem",
+      "type": "lineHeights"
+    },
+    "tight": {
+      "value": "1.25rem",
+      "type": "lineHeights"
+    },
+    "snug": {
+      "value": "1.375rem",
+      "type": "lineHeights"
+    },
+    "normal": {
+      "value": "1.5rem",
+      "type": "lineHeights"
+    },
+    "relaxed": {
+      "value": "1.625rem",
+      "type": "lineHeights"
+    },
+    "loose": {
+      "value": "2rem",
+      "type": "lineHeights"
+    }
   }
 }
