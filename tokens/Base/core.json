@@ -193,6 +193,10 @@
       "value": "8px",
       "type": "spacing"
     },
+    "space-12": {
+      "value": "12px",
+      "type": "spacing"
+    },
     "space-16": {
       "value": "16px",
       "type": "spacing"
