@@ -109,5 +109,31 @@
       "type": "sizing",
       "description": "128px"
     }
+  },
+  "letterSpacing": {
+    "tighter": {
+      "value": "-0.05em",
+      "type": "letterSpacing"
+    },
+    "tight": {
+      "value": "-0.025em",
+      "type": "letterSpacing"
+    },
+    "normal": {
+      "value": "0em",
+      "type": "letterSpacing"
+    },
+    "wide": {
+      "value": "0.025em",
+      "type": "letterSpacing"
+    },
+    "wider": {
+      "value": "0.05em",
+      "type": "letterSpacing"
+    },
+    "widest": {
+      "value": "0.1em",
+      "type": "letterSpacing"
+    }
   }
 }
