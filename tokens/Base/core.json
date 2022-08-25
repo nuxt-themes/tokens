@@ -270,7 +270,7 @@
     }
   },
   "borderWidth": {
-    "no-border": {
+    "noBorder": {
       "value": "0",
       "type": "borderWidth"
     },
@@ -288,7 +288,7 @@
     }
   },
   "opacity": {
-    "no-opacity": {
+    "noOpacity": {
       "value": "0",
       "type": "opacity"
     },

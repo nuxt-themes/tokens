@@ -7,39 +7,39 @@
   },
   "fontWeight": {
     "thin": {
-      "value": "100",
+      "value": "Thin",
       "type": "fontWeights"
     },
     "extralight": {
-      "value": "200",
+      "value": "Extralight",
       "type": "fontWeights"
     },
     "light": {
-      "value": "300",
+      "value": "Light",
       "type": "fontWeights"
     },
     "normal": {
-      "value": "400",
+      "value": "Normal",
       "type": "fontWeights"
     },
     "medium": {
-      "value": "500",
+      "value": "Medium",
       "type": "fontWeights"
     },
     "semibold": {
-      "value": "600",
+      "value": "Semibold",
       "type": "fontWeights"
     },
     "bold": {
-      "value": "700",
+      "value": "Bold",
       "type": "fontWeights"
     },
     "extrabold": {
-      "value": "800",
+      "value": "Extrabold",
       "type": "fontWeights"
     },
     "black": {
-      "value": "900",
+      "value": "Black",
       "type": "fontWeights"
     }
   },
@@ -281,9 +281,5 @@
       },
       "type": "typography"
     }
-  },
-  "regular": {
-    "value": "Regular",
-    "type": "fontWeights"
   }
 }
