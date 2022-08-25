@@ -1,0 +1,44 @@
+{
+  "primary": {
+    "50": {
+      "value": "{indigoblue.50}",
+      "type": "color"
+    },
+    "100": {
+      "value": "{indigoblue.100}",
+      "type": "color"
+    },
+    "200": {
+      "value": "{indigoblue.200}",
+      "type": "color"
+    },
+    "300": {
+      "value": "{indigoblue.300}",
+      "type": "color"
+    },
+    "400": {
+      "value": "{indigoblue.400}",
+      "type": "color"
+    },
+    "500": {
+      "value": "{indigoblue.500}",
+      "type": "color"
+    },
+    "600": {
+      "value": "{indigoblue.600}",
+      "type": "color"
+    },
+    "700": {
+      "value": "{indigoblue.700}",
+      "type": "color"
+    },
+    "800": {
+      "value": "{indigoblue.800}",
+      "type": "color"
+    },
+    "900": {
+      "value": "{indigoblue.900}",
+      "type": "color"
+    }
+  }
+}

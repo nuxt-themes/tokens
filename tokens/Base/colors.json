@@ -643,43 +643,43 @@
   },
   "primary": {
     "50": {
-      "value": "{indigoblue.50}",
+      "value": "{gray.50}",
       "type": "color"
     },
     "100": {
-      "value": "{indigoblue.100}",
+      "value": "{gray.100}",
       "type": "color"
     },
     "200": {
-      "value": "{indigoblue.200}",
+      "value": "{gray.200}",
       "type": "color"
     },
     "300": {
-      "value": "{indigoblue.300}",
+      "value": "{gray.300}",
       "type": "color"
     },
     "400": {
-      "value": "{indigoblue.400}",
+      "value": "{gray.400}",
       "type": "color"
     },
     "500": {
-      "value": "{indigoblue.500}",
+      "value": "{gray.500}",
       "type": "color"
     },
     "600": {
-      "value": "{indigoblue.600}",
+      "value": "{gray.600}",
       "type": "color"
     },
     "700": {
-      "value": "{indigoblue.700}",
+      "value": "{gray.700}",
       "type": "color"
     },
     "800": {
-      "value": "{indigoblue.800}",
+      "value": "{gray.800}",
       "type": "color"
     },
     "900": {
-      "value": "{indigoblue.900}",
+      "value": "{gray.900}",
       "type": "color"
     }
   }
