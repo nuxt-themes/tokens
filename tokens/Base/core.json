@@ -108,7 +108,7 @@
     }
   },
   "border-radius": {
-    "xxs": {
+    "2xs": {
       "value": "0.125rem",
       "type": "borderRadius",
       "description": "2px"
@@ -123,22 +123,22 @@
       "type": "borderRadius",
       "description": "6px"
     },
-    "base": {
+    "md": {
       "value": "0.5rem",
       "type": "borderRadius",
       "description": "8px"
     },
-    "md": {
+    "lg": {
       "value": "0.75rem",
       "type": "borderRadius",
       "description": "12px"
     },
-    "lg": {
+    "xl": {
       "value": "1rem",
       "type": "borderRadius",
       "description": "16px"
     },
-    "xl": {
+    "2xl": {
       "value": "1.5rem",
       "type": "borderRadius",
       "description": "24px"
