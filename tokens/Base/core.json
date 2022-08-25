@@ -150,6 +150,14 @@
     }
   },
   "sizings": {
+    "size-4": {
+      "value": "4px",
+      "type": "sizing"
+    },
+    "size-8": {
+      "value": "8px",
+      "type": "sizing"
+    },
     "size-12": {
       "value": "12px",
       "type": "sizing"
@@ -189,13 +197,20 @@
     "size-80": {
       "value": "80px",
       "type": "sizing"
+    },
+    "size-104": {
+      "value": "104px",
+      "type": "sizing"
+    },
+    "size-200": {
+      "value": "200px",
+      "type": "sizing"
     }
   },
   "spacings": {
-    "nospace": {
+    "space-0": {
       "value": "0",
-      "type": "spacing",
-      "description": "erase current value"
+      "type": "spacing"
     },
     "space-4": {
       "value": "4px",
@@ -213,6 +228,10 @@
       "value": "16px",
       "type": "spacing"
     },
+    "space-20": {
+      "value": "20px",
+      "type": "spacing"
+    },
     "space-24": {
       "value": "24px",
       "type": "spacing"
@@ -221,8 +240,16 @@
       "value": "32px",
       "type": "spacing"
     },
+    "space-40": {
+      "value": "40px",
+      "type": "spacing"
+    },
     "space-48": {
       "value": "48px",
+      "type": "spacing"
+    },
+    "space-56": {
+      "value": "56px",
       "type": "spacing"
     },
     "space-64": {
