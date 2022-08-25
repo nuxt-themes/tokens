@@ -8,6 +8,7 @@
     "Themes/docus/colors",
     "Themes/docus/customRadiuses",
     "Themes/docus/typography",
-    "Themes/nuxt/colors"
+    "Themes/nuxt/colors",
+    "Themes/studio/colors"
   ]
 }
