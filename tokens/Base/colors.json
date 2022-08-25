@@ -11,44 +11,54 @@
   },
   "gray": {
     "50": {
-      "value": "#f8fafc",
-      "type": "color"
+      "value": "#fafafa",
+      "type": "color",
+      "description": "Background light"
     },
     "100": {
-      "value": "#e2e8f0",
-      "type": "color"
+      "value": "#f4f4f5",
+      "type": "color",
+      "description": "Background normal / Background light hover / Sub text in darkmode / Border lighter"
     },
     "200": {
-      "value": "#cbd5e1",
-      "type": "color"
+      "value": "#e4e4e7",
+      "type": "color",
+      "description": "Border light / Background normal hover"
     },
     "300": {
-      "value": "#94a3b8",
-      "type": "color"
+      "value": "#D4d4d8",
+      "type": "color",
+      "description": "Border normal"
     },
     "400": {
-      "value": "#64748b",
-      "type": "color"
+      "value": "#a1a1aa",
+      "type": "color",
+      "description": "Icons light / Text placeholder / Text lighter"
     },
     "500": {
-      "value": "#475569",
-      "type": "color"
+      "value": "#71717A",
+      "type": "color",
+      "description": "Text light"
     },
     "600": {
-      "value": "#334155",
-      "type": "color"
+      "value": "#52525B",
+      "type": "color",
+      "description": "Icons normal"
     },
     "700": {
-      "value": "#1e293b",
-      "type": "color"
+      "value": "#3f3f46",
+      "type": "color",
+      "description": "Text normal / Borders on hover or in darkmode"
     },
     "800": {
-      "value": "#0f172a",
-      "type": "color"
+      "value": "#27272A",
+      "type": "color",
+      "description": "Icon Dark / Button background hover"
     },
     "900": {
-      "value": "#070a13",
-      "type": "color"
+      "value": "#18181B",
+      "type": "color",
+      "description": "Headlines / Text Highlight / Background buttons"
     }
   },
   "green": {
@@ -628,6 +638,48 @@
     },
     "360°": {
       "value": "linear-gradient(180deg, #0047e1 0%, #36e4da 50%, #00dc82 100%)",
+      "type": "color"
+    }
+  },
+  "primary": {
+    "50": {
+      "value": "#d9e5ff",
+      "type": "color"
+    },
+    "100": {
+      "value": "#b3cbff",
+      "type": "color"
+    },
+    "200": {
+      "value": "#8db0ff",
+      "type": "color"
+    },
+    "300": {
+      "value": "#6696ff",
+      "type": "color"
+    },
+    "400": {
+      "value": "#407cff",
+      "type": "color"
+    },
+    "500": {
+      "value": "#1a62ff",
+      "type": "color"
+    },
+    "600": {
+      "value": "#0047e1",
+      "type": "color"
+    },
+    "700": {
+      "value": "#0035a9",
+      "type": "color"
+    },
+    "800": {
+      "value": "#002370",
+      "type": "color"
+    },
+    "900": {
+      "value": "#001238",
       "type": "color"
     }
   }
