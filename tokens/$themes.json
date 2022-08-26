@@ -10,7 +10,9 @@
       "Themes/alpine/typography": "disabled",
       "Themes/docus/colors": "disabled",
       "Themes/docus/customRadiuses": "disabled",
-      "Themes/docus/typography": "disabled"
+      "Themes/docus/typography": "disabled",
+      "Themes/nuxt/typography": "enabled",
+      "Themes/studio/colors": "enabled"
     },
     "$figmaStyleReferences": {}
   },
@@ -21,7 +23,8 @@
       "Base/colors": "source",
       "Base/core": "source",
       "Base/typography": "source",
-      "Themes/nuxt/colors": "enabled"
+      "Themes/nuxt/colors": "enabled",
+      "Themes/nuxt/typography": "enabled"
     },
     "$figmaStyleReferences": {
       "neutral.white": "S:76105059f1e72ed4643dd3e97d9e4c99551531ec,",
