@@ -1,22 +1,5 @@
 [
   {
-    "id": "cb96565881c98acdd43199d3083e5a01dfb8a563",
-    "name": "Studio",
-    "selectedTokenSets": {
-      "Base/colors": "source",
-      "Base/core": "source",
-      "Base/typography": "source",
-      "Themes/alpine/colors": "disabled",
-      "Themes/alpine/typography": "disabled",
-      "Themes/docus/colors": "disabled",
-      "Themes/docus/customRadiuses": "disabled",
-      "Themes/docus/typography": "disabled",
-      "Themes/nuxt/typography": "enabled",
-      "Themes/studio/colors": "enabled"
-    },
-    "$figmaStyleReferences": {}
-  },
-  {
     "id": "25c003ad5e5d60aea6f8c6186e45029ba7ae6f09",
     "name": "Nuxt",
     "selectedTokenSets": {
@@ -24,7 +7,8 @@
       "Base/core": "source",
       "Base/typography": "source",
       "Themes/nuxt/colors": "enabled",
-      "Themes/nuxt/typography": "enabled"
+      "Themes/nuxt/typography": "enabled",
+      "Themes/studio/typography": "disabled"
     },
     "$figmaStyleReferences": {
       "neutral.white": "S:76105059f1e72ed4643dd3e97d9e4c99551531ec,",
@@ -178,5 +162,23 @@
       "Gradient.285°": "S:1b846854a71e90746dfcc25035b809e4e89770cb,",
       "Gradient.360°": "S:29b496ace3901e97e00fa1f0f1b4af18fb3456d2,"
     }
+  },
+  {
+    "id": "cb96565881c98acdd43199d3083e5a01dfb8a563",
+    "name": "Studio",
+    "selectedTokenSets": {
+      "Base/colors": "source",
+      "Base/core": "source",
+      "Base/typography": "source",
+      "Themes/alpine/colors": "disabled",
+      "Themes/alpine/typography": "disabled",
+      "Themes/docus/colors": "disabled",
+      "Themes/docus/customRadiuses": "disabled",
+      "Themes/docus/typography": "disabled",
+      "Themes/nuxt/typography": "enabled",
+      "Themes/studio/colors": "enabled",
+      "Themes/studio/typography": "enabled"
+    },
+    "$figmaStyleReferences": {}
   }
 ]
