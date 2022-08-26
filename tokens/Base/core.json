@@ -154,6 +154,10 @@
       "value": "4px",
       "type": "sizing"
     },
+    "size-6": {
+      "value": "6px",
+      "type": "sizing"
+    },
     "size-8": {
       "value": "8px",
       "type": "sizing"
@@ -214,6 +218,10 @@
     },
     "space-4": {
       "value": "4px",
+      "type": "spacing"
+    },
+    "space-6": {
+      "value": "6px",
       "type": "spacing"
     },
     "space-8": {
