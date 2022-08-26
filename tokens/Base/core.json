@@ -282,15 +282,15 @@
       "value": "0",
       "type": "borderWidth"
     },
-    "small": {
+    "sm": {
       "value": "1px",
       "type": "borderWidth"
     },
-    "base": {
+    "md": {
       "value": "2px",
       "type": "borderWidth"
     },
-    "large": {
+    "lg": {
       "value": "3px",
       "type": "borderWidth"
     }
