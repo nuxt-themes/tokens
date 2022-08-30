@@ -1,0 +1,21 @@
+{
+  "name": "@nuxt-themes/tokens",
+  "version": "1.0.0",
+  "description": "Nuxt official Design Tokens definition.",
+  "main": "index.js",
+  "repository": "git@github.com:nuxt-themes/tokens.git",
+  "author": "Yaël Guilloux <yael.guilloux@gmail.com>",
+  "license": "MIT",
+  "files": [
+    "nuxt.config.ts",
+    "tokens",
+    "tokens.config.ts"
+  ],
+  "scripts": {
+    "dev": "nuxi dev"
+  },
+  "devDependencies": {
+    "@nuxtjs/design-tokens": "npm:@nuxtjs/design-tokens-edge@latest",
+    "nuxt": "npm:nuxt3@latest"
+  }
+}
