@@ -16,7 +16,8 @@
     "dev": "nuxi dev",
     "build": "nuxi build",
     "generate": "nuxi generate",
-    "lint": "eslint . --fix"
+    "lint": "eslint . --fix",
+    "release": "release-it"
   },
   "dependencies": {
     "@nuxtjs/color-mode": "^3.1.5",
