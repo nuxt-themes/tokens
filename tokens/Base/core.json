@@ -1,5 +1,15 @@
 {
-  "boxshadow": {
+  "fonts": {
+    "base": {
+      "value": "Inter, sans-serif",
+      "type": "fontFamilies"
+    },
+    "code": {
+      "value": "i-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace",
+      "type": "fontFamilies"
+    }
+  },
+  "shadows": {
     "xs": {
       "value": {
         "color": "#0000000d",
@@ -107,7 +117,7 @@
       "type": "boxShadow"
     }
   },
-  "border-radius": {
+  "radii": {
     "2xs": {
       "value": "0.125rem",
       "type": "borderRadius",
@@ -149,135 +159,135 @@
       "description": "A very large value to handle every cases"
     }
   },
-  "sizings": {
-    "size-4": {
+  "size": {
+    "4": {
       "value": "4px",
       "type": "sizing"
     },
-    "size-6": {
+    "6": {
       "value": "6px",
       "type": "sizing"
     },
-    "size-8": {
+    "8": {
       "value": "8px",
       "type": "sizing"
     },
-    "size-12": {
+    "12": {
       "value": "12px",
       "type": "sizing"
     },
-    "size-16": {
+    "16": {
       "value": "16px",
       "type": "sizing"
     },
-    "size-20": {
+    "20": {
       "value": "20px",
       "type": "sizing"
     },
-    "size-24": {
+    "24": {
       "value": "24px",
       "type": "sizing"
     },
-    "size-32": {
+    "32": {
       "value": "32px",
       "type": "sizing"
     },
-    "size-40": {
+    "40": {
       "value": "40px",
       "type": "sizing"
     },
-    "size-48": {
+    "48": {
       "value": "48px",
       "type": "sizing"
     },
-    "size-56": {
+    "56": {
       "value": "56px",
       "type": "sizing"
     },
-    "size-64": {
+    "64": {
       "value": "64px",
       "type": "sizing"
     },
-    "size-80": {
+    "80": {
       "value": "80px",
       "type": "sizing"
     },
-    "size-104": {
+    "104": {
       "value": "104px",
       "type": "sizing"
     },
-    "size-200": {
+    "200": {
       "value": "200px",
       "type": "sizing"
     }
   },
-  "spacings": {
-    "space-0": {
+  "space": {
+    "0": {
       "value": "0",
       "type": "spacing"
     },
-    "space-4": {
+    "4": {
       "value": "4px",
       "type": "spacing"
     },
-    "space-6": {
+    "6": {
       "value": "6px",
       "type": "spacing"
     },
-    "space-8": {
+    "8": {
       "value": "8px",
       "type": "spacing"
     },
-    "space-12": {
+    "12": {
       "value": "12px",
       "type": "spacing"
     },
-    "space-16": {
+    "16": {
       "value": "16px",
       "type": "spacing"
     },
-    "space-20": {
+    "20": {
       "value": "20px",
       "type": "spacing"
     },
-    "space-24": {
+    "24": {
       "value": "24px",
       "type": "spacing"
     },
-    "space-32": {
+    "32": {
       "value": "32px",
       "type": "spacing"
     },
-    "space-40": {
+    "40": {
       "value": "40px",
       "type": "spacing"
     },
-    "space-48": {
+    "48": {
       "value": "48px",
       "type": "spacing"
     },
-    "space-56": {
+    "56": {
       "value": "56px",
       "type": "spacing"
     },
-    "space-64": {
+    "64": {
       "value": "64px",
       "type": "spacing"
     },
-    "space-80": {
+    "80": {
       "value": "80px",
       "type": "spacing"
     },
-    "space-104": {
+    "104": {
       "value": "104px",
       "type": "spacing"
     },
-    "space-200": {
+    "200": {
       "value": "200px",
       "type": "spacing"
     }
   },
-  "borderWidth": {
+  "borderWidths": {
     "noBorder": {
       "value": "0",
       "type": "borderWidth"

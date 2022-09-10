@@ -1,11 +1,3 @@
 {
-  "extends": "./.nuxt/tsconfig.json",
-  "vueCompilerOptions": {
-    "plugins": [
-      "@nuxtjs/design-tokens/volar"
-    ]
-  },
-  "include": [
-    "app.vue"
-  ]
+  "extends": "./.nuxt/tsconfig.json"
 }

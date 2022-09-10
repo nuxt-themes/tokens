@@ -1,23 +1,45 @@
-<template>
-<div>
-  Hello World!
+<script setup>
+import { theme } from '#pinceau'
 
-  <br />
-
-  <pre>{{ JSON.stringify(themeTokens, null, 2)}}</pre>
-</div>
-</template>
-
-<script setup lang="ts">
-// @ts-ignore
-import { themeTokens } from '#design-tokens'
+const categories = computed(
+  () => {
+    return Object.entries(theme)
+  },
+)
 </script>
 
-<style scoped lang="ts">
+<template>
+  <div class="nuxt-themes-tokens">
+    <Navbar />
+    <section class="motd">
+      <ContentDoc />
+    </section>
+    <TokensSection v-for="[key, tokens] in categories" :key="key" :name="key" :tokens="tokens" />
+  </div>
+</template>
+
+<style lang="ts">
 css({
-  div: {
-    padding: '1rem',
-    backgroundColor: '{colors.indigoblue.200}'
+  'html, body': {
+    width: '100%',
+    height: '100%',
+    maxWidth: '100vw',
+    maxHeight: '100vh',
+    overflowX: 'hidden',
+    backgroundColor: '{colors.neutral.white}',
+    color: '{colors.neutral.black}',
+    '@dark': {
+      backgroundColor: '{colors.neutral.black}',
+      color: '{colors.neutral.white}'
+    },
+    section: {
+      padding: '{space.32}'
+    }
+  },
+  '.nuxt-themes-tokens': {
+    '.motd': {
+      lineHeight: '{leads.loose}'
+    }
   }
 })
 </style>

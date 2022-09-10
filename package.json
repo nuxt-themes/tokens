@@ -2,20 +2,60 @@
   "name": "@nuxt-themes/tokens",
   "version": "1.0.0",
   "description": "Nuxt official Design Tokens definition.",
-  "main": "index.js",
-  "repository": "git@github.com:nuxt-themes/tokens.git",
   "author": "Yaël Guilloux <yael.guilloux@gmail.com>",
   "license": "MIT",
+  "repository": "git@github.com:nuxt-themes/tokens.git",
+  "type": "module",
+  "exports": "./_nuxt.config.ts",
   "files": [
-    "nuxt.config.ts",
+    "_nuxt.config.ts",
     "tokens",
     "tokens.config.ts"
   ],
   "scripts": {
-    "dev": "nuxi dev"
+    "dev": "nuxi dev",
+    "build": "nuxi build",
+    "generate": "nuxi generate",
+    "lint": "eslint . --fix"
+  },
+  "dependencies": {
+    "@nuxtjs/color-mode": "^3.1.5",
+    "pinceau": "latest",
+    "style-value-types": "^5.1.2"
   },
   "devDependencies": {
-    "@nuxtjs/design-tokens": "npm:@nuxtjs/design-tokens-edge@latest",
-    "nuxt": "npm:nuxt3@latest"
+    "@antfu/eslint-config": "^0.26.3",
+    "@nuxt/content": "^2.1.0",
+    "eslint": "^8.23.0",
+    "nuxt": "npm:nuxt3@latest",
+    "nuxt-icon": "^0.1.5",
+    "release-it": "^15.4.1",
+    "typescript": "^4.8.3"
+  },
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "vue",
+        "postcss",
+        "postcss-*"
+      ]
+    }
+  },
+  "release-it": {
+    "hooks": {
+      "before:init": [
+        "pnpm build"
+      ]
+    },
+    "npm": {
+      "access": "public"
+    },
+    "git": {
+      "commitMessage": "chore(release): release v${version}"
+    },
+    "github": {
+      "release": true,
+      "releaseName": "v${version}"
+    }
   }
 }
