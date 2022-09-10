@@ -2,7 +2,7 @@
   "name": "@nuxt-themes/tokens",
   "version": "1.0.0",
   "description": "Nuxt official Design Tokens definition.",
-  "author": "Yaël Guilloux <yael.guilloux@gmail.com>",
+  "author": "NuxtLabs <hello@nuxtlabs.com>",
   "license": "MIT",
   "repository": "git@github.com:nuxt-themes/tokens.git",
   "type": "module",
