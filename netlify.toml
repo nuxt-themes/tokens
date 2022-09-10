@@ -4,4 +4,4 @@
   NODE_VERSION = "16"
 
 [build]
-  command = "npx pnpm i --store=node_modules/.pnpm-store && npm run build"
+  command = "npx pnpm i --store=node_modules/.pnpm-store && npm run generate"

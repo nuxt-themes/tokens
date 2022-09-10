@@ -94,8 +94,8 @@ const isLeads = computed(() => props.nestings.includes('leads'))
       <span>{{ tokenValue }}</span>
     </template>
     <template v-if="isOpacity">
-      <div class="box shadow">
-        <div class="shadowed" :style="{ opacity: tokenValue }">
+      <div class="box opacity">
+        <div :style="{ opacity: tokenValue }">
         &nbsp;
         </div>
       </div>
@@ -156,7 +156,7 @@ css({
       justifyContent: 'center',
       width: '256px',
       height: '256px',
-      backgroundColor: 'black',
+      backgroundColor: '{colors.neutral.white}',
       '@dark': {
         backgroundColor: 'white'
       },
@@ -171,16 +171,13 @@ css({
         height: '128px',
         borderRadius: '{radii.xl}',
         backgroundColor: '{colors.neutral.white}',
-        '@dark': {
-          backgroundColor: '{colors.neutral.black}'
-        }
       },
     },
     '&.size': {
       backgroundColor: '{colors.neutral.black}',
       '@dark': {
         backgroundColor: '{colors.neutral.white}'
-      }
+      },
      },
     '&.radii': {
       border: '8px solid {colors.indigoblue.500}',
@@ -190,16 +187,40 @@ css({
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
+      backgroundColor: '{colors.neutral.black}',
+      "@dark": {
+        backgroundColor: '{colors.neutral.white}',
+      },
       '& > div': {
-        backgroundColor: '{colors.neutral.black}',
+        backgroundColor: '{colors.neutral.white}',
         borderRadius: '{radii.lg}',
         width: '100%',
-        height: '100%'
+        height: '100%',
+        "@dark": {
+          backgroundColor: '{colors.neutral.black}',
+        }
       }
     },
     '&.borderWidths': {
       borderColor: '{colors.indigoblue.500}',
       borderStyle: 'solid'
+    },
+    '&.opacity': {
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      "@dark": {
+        backgroundColor: '{colors.neutral.white}',
+      },
+      '& > div': {
+        backgroundColor: '{colors.neutral.white}',
+        borderRadius: '{radii.lg}',
+        width: '50%',
+        height: '50%',
+        "@dark": {
+          backgroundColor: '{colors.neutral.black}',
+        }
+      }
     }
   },
   '.paragraph': {

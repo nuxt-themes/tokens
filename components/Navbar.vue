@@ -17,7 +17,10 @@ css({
     padding: '{space.16} {space.32}',
     position: 'sticky',
     top: '{space.0}',
-    backgroundColor: '{colors.neutral.black}',
+    backgroundColor: '{colors.neutral.white}',
+    "@dark": {
+      backgroundColor: '{colors.neutral.black}',
+    },
     zIndex: '50',
     h1: {
       fontSize: '{fontSizes.3xl}',
