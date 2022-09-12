@@ -1,8 +1,21 @@
 <script setup lang="ts">
 import type { PropType } from 'vue'
-import type { PinceauTokens } from 'pinceau'
+import type { DesignToken, PinceauTokens } from 'pinceau'
+import { useVModel } from '@vueuse/core'
 
 const props = defineProps({
+  hoveredToken: {
+    type: Object as PropType<DesignToken | undefined>,
+    required: false,
+  },
+  clipboardState: {
+    type: String,
+    required: false,
+  },
+  type: {
+    type: String,
+    required: false,
+  },
   name: {
     type: String,
     required: false,
@@ -23,6 +36,12 @@ const props = defineProps({
   },
 })
 
+const emit = defineEmits(['update:hoveredToken', 'update:clipboardState'])
+
+const hoveredToken = useVModel(props, 'hoveredToken', emit)
+
+const clipboardState = useVModel(props, 'clipboardState', emit)
+
 const values = computed(
   () => {
     return Object.entries(props.tokens)
@@ -38,8 +57,8 @@ const values = computed(
 
     <ul :class="{ flatten }">
       <li v-for="[key, value] of values" :key="key">
-        <DisplayValue v-if="value.value" :token="value" :name="key" :nestings="[...nestings, name]" />
-        <TokensSection v-else :tokens="value" :flatten="true" :name="key" :nestings="[...nestings, name]" />
+        <DisplayValue v-if="value.value" v-model:hoveredToken="hoveredToken" v-model:clipboardState="clipboardState" :token="value" :type="type" :name="key" :nestings="[...nestings, name]" />
+        <TokensSection v-else v-model:hoveredToken="hoveredToken" v-model:clipboardState="clipboardState" :tokens="value" :type="type" :flatten="true" :name="key" :nestings="[...nestings, name]" />
       </li>
     </ul>
   </section>
@@ -47,17 +66,12 @@ const values = computed(
 
 <style scoped lang="ts">
 css({
-  section: {
-    '& > * + *': {
-      marginLeft: '2rem'
-    }
-  },
   'h2, h3': {
     fontStyle: 'capitalize',
     textTransform: 'capitalize',
     fontFamily: '{fonts.base}',
     fontWeight: 'bold',
-    marginTop: '{space.4}'
+    marginTop: '{space.32}'
   },
   'h2': {
     fontSize: '{fontSizes.3xl}',

@@ -1,7 +1,7 @@
 import { defineTheme } from 'pinceau'
-import colors from './tokens/base/colors.json'
-import core from './tokens/base/core.json'
-import typography from './tokens/base/typography.json'
+import colors from '../tokens/base/colors.json'
+import core from '../tokens/base/core.json'
+import typography from '../tokens/base/typography.json'
 
 const tokens = {
   colors,

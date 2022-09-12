@@ -2,8 +2,21 @@
 import type { PropType } from 'vue'
 import type { DesignToken } from 'pinceau'
 import * as vt from 'style-value-types'
+import { useClipboard, useVModel } from '@vueuse/core'
 
 const props = defineProps({
+  hoveredToken: {
+    type: Object as PropType<DesignToken | undefined>,
+    required: false,
+  },
+  type: {
+    type: String,
+    required: false,
+  },
+  clipboardState: {
+    type: String,
+    required: false,
+  },
   nestings: {
     type: Array,
     required: false,
@@ -19,7 +32,38 @@ const props = defineProps({
   },
 })
 
+const emit = defineEmits(['update:hoveredToken', 'update:clipboardState'])
+
+const hoveredToken = useVModel(props, 'hoveredToken', emit)
+
+const clipboardState = useVModel(props, 'clipboardState', emit)
+
 const tokenValue = computed(() => props?.token?.value || props.token?.original?.value)
+
+const copyValue = computed(() => {
+  if (props.type === 'token' && props.token?.path) {
+    return `{${props.token.path.join('.')}}`
+  }
+  return props.token?.attributes?.variable || props.token?.value || props.token?.original?.value || ''
+})
+
+const { copy: _copy } = useClipboard({ source: copyValue })
+
+const copy = () => {
+  _copy()
+  if (clipboardState.value !== 'copied') {
+    clipboardState.value = 'copied'
+    setTimeout(() => (clipboardState.value = ''), 1000)
+  }
+}
+
+const leave = () => {
+  hoveredToken.value = undefined
+}
+
+const enter = () => {
+  hoveredToken.value = props.token
+}
 
 const isScreen = computed(() => props.nestings.includes('screens'))
 
@@ -49,80 +93,85 @@ const isLeads = computed(() => props.nestings.includes('leads'))
 </script>
 
 <template>
-  <NuxtLink v-if="name" :id="name" :to="`#${nestings.length ? [...nestings, name].join('-') : name}`">
-    <h3>{{ name }}</h3>
-  </NuxtLink>
-  <span>
-    <template v-if="isScreen">
-      <div class="box" :style="{ width: tokenValue, height: tokenValue }" />
-      <span>{{ tokenValue }}</span>
-    </template>
-    <template v-if="isColor">
-      <div class="box color" :style="{ backgroundColor: tokenValue }" />
-      <span>{{ tokenValue }}</span>
-    </template>
-    <template v-if="isFont">
-      <div class="paragraph" :style="{ fontFamily: tokenValue }">
-        <PlaceholderText />
-      </div>
-      <span>{{ tokenValue }}</span>
-    </template>
-    <template v-if="isShadow">
-      <div class="box shadow">
-        <div class="shadowed" :style="{ boxShadow: tokenValue }">
-        &nbsp;
+  <div @mouseenter="enter" @mouseleave="leave" @click="() => copy()">
+    <NuxtLink v-if="name" :id="name" :to="`#${nestings.length ? [...nestings, name].join('-') : name}`">
+      <h3>{{ name }}</h3>
+    </NuxtLink>
+    <span>
+      <template v-if="isScreen">
+        <div class="box" :style="{ width: tokenValue, height: tokenValue }" />
+        <span>{{ tokenValue }}</span>
+      </template>
+      <template v-if="isColor">
+        <div class="box color" :style="{ backgroundColor: tokenValue }" />
+        <span>{{ tokenValue }}</span>
+      </template>
+      <template v-if="isFont">
+        <div class="paragraph" :style="{ fontFamily: tokenValue }">
+          <PlaceholderText />
         </div>
-      </div>
-      <span>{{ tokenValue }}</span>
-    </template>
-    <template v-if="isRadii">
-      <div class="box radii" :style="{ borderRadius: tokenValue }" />
-      <span>{{ tokenValue }}</span>
-    </template>
-    <template v-if="isSize">
-      <div class="box size" :style="{ width: tokenValue, height: tokenValue }" />
-      <span>{{ tokenValue }}</span>
-    </template>
-    <template v-if="isSpace">
-      <div class="box space" :style="{ width: '500px', height: '500px', padding: tokenValue }">
-        <div />
-      </div>
-      <span>{{ tokenValue }}</span>
-    </template>
-    <template v-if="isBorderWidth">
-      <div class="box borderWidths" :style="{ borderWidth: `${tokenValue}` }" />
-      <span>{{ tokenValue }}</span>
-    </template>
-    <template v-if="isOpacity">
-      <div class="box opacity">
-        <div :style="{ opacity: tokenValue }">
+        <span>{{ tokenValue }}</span>
+      </template>
+      <template v-if="isShadow">
+        <div class="box shadow">
+          <div class="shadowed" :style="{ boxShadow: tokenValue }">
         &nbsp;
+          </div>
         </div>
-      </div>
-      <span>{{ tokenValue }}</span>
-    </template>
-    <template v-if="isFontWeights">
-      <PlaceholderText single :style="{ fontWeight: tokenValue }" />
-      <span>{{ tokenValue }}</span>
-    </template>
-    <template v-if="isFontSizes">
-      <PlaceholderText single :style="{ fontSize: tokenValue }" />
-      <span>{{ tokenValue }}</span>
-    </template>
-    <template v-if="isLetterSpacings">
-      <PlaceholderText single :style="{ letterSpacing: tokenValue }" />
-      <span>{{ tokenValue }}</span>
-    </template>
-    <template v-if="isLeads">
-      <PlaceholderText single :style="{ lineHeight: tokenValue }" />
-      <span>{{ tokenValue }}</span>
-    </template>
-    <p>{{ token.attributes.variable }}</p>
-  </span>
+        <span>{{ tokenValue }}</span>
+      </template>
+      <template v-if="isRadii">
+        <div class="box radii" :style="{ borderRadius: tokenValue }" />
+        <span>{{ tokenValue }}</span>
+      </template>
+      <template v-if="isSize">
+        <div class="box size" :style="{ width: tokenValue, height: tokenValue }" />
+        <span>{{ tokenValue }}</span>
+      </template>
+      <template v-if="isSpace">
+        <div class="box space" :style="{ width: '500px', height: '500px', padding: tokenValue }">
+          <div />
+        </div>
+        <span>{{ tokenValue }}</span>
+      </template>
+      <template v-if="isBorderWidth">
+        <div class="box borderWidths" :style="{ borderWidth: `${tokenValue}` }" />
+        <span>{{ tokenValue }}</span>
+      </template>
+      <template v-if="isOpacity">
+        <div class="box opacity">
+          <div :style="{ opacity: tokenValue }">
+        &nbsp;
+          </div>
+        </div>
+        <span>{{ tokenValue }}</span>
+      </template>
+      <template v-if="isFontWeights">
+        <PlaceholderText single :style="{ fontWeight: tokenValue }" />
+        <span>{{ tokenValue }}</span>
+      </template>
+      <template v-if="isFontSizes">
+        <PlaceholderText single :style="{ fontSize: tokenValue }" />
+        <span>{{ tokenValue }}</span>
+      </template>
+      <template v-if="isLetterSpacings">
+        <PlaceholderText single :style="{ letterSpacing: tokenValue }" />
+        <span>{{ tokenValue }}</span>
+      </template>
+      <template v-if="isLeads">
+        <PlaceholderText single :style="{ lineHeight: tokenValue }" />
+        <span>{{ tokenValue }}</span>
+      </template>
+      <p>{{ token.attributes.variable }}</p>
+    </span>
+  </div>
 </template>
 
-<style lang="ts">
+<style scoped lang="ts">
 css({
+  div: {
+    cursor: 'copy'
+  },
   'h3': {
     fontStyle: 'capitalize',
     textTransform: 'capitalize',

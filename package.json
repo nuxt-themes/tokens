@@ -6,27 +6,38 @@
   "license": "MIT",
   "repository": "git@github.com:nuxt-themes/tokens.git",
   "type": "module",
-  "exports": "./_nuxt.config.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/module.mjs",
+      "require": "./dist/module.cjs"
+    },
+    "./tokens": {
+      "import": "./dist/tokens.mjs",
+      "require": "./dist/tokens.cjs"
+    }
+  },
   "files": [
-    "_nuxt.config.ts",
-    "tokens",
-    "tokens.config.ts"
+    "dist",
+    "tokens"
   ],
   "scripts": {
-    "dev": "nuxi dev",
-    "build": "nuxi build",
-    "generate": "nuxi generate",
+    "dev": "nuxi dev website",
+    "build": "nuxi generate website",
+    "generate": "nuxi generate website",
     "lint": "eslint . --fix",
     "release": "release-it"
   },
   "dependencies": {
     "@nuxtjs/color-mode": "^3.1.5",
+    "@vueuse/core": "^9.2.0",
     "pinceau": "latest",
+    "@vueuse/motion": "2.0.0-beta.22",
     "style-value-types": "^5.1.2"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.26.3",
     "@nuxt/content": "^2.1.0",
+    "@nuxt/module-builder": "latest",
     "eslint": "^8.23.0",
     "nuxt": "npm:nuxt3@latest",
     "nuxt-icon": "^0.1.5",
@@ -38,7 +49,8 @@
       "ignoreMissing": [
         "vue",
         "postcss",
-        "postcss-*"
+        "postcss-*",
+        "@nuxt/kit"
       ]
     }
   },
@@ -58,5 +70,10 @@
       "release": true,
       "releaseName": "v${version}"
     }
+  },
+  "build": {
+    "entries": [
+      "./src/tokens.ts"
+    ]
   }
 }

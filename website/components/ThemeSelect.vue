@@ -28,6 +28,16 @@ css({
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
+    'svg, a > svg': {
+        height: '{size.16}',
+        width: '{size.16}'
+      },
+      '@screen:xl': {
+        'svg, a > svg': {
+          height: '{size.32}',
+          width: '{size.32}'
+        }
+      }
   }
 })
 </style>

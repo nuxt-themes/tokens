@@ -1,3 +1,45 @@
 {
-  "extends": "./.nuxt/tsconfig.json"
+  "compilerOptions": {
+    "jsx": "preserve",
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "skipLibCheck": true,
+    "strict": false,
+    "allowJs": true,
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "types": ["node"],
+    "baseUrl": ".",
+    "paths": {
+      "~~": ["./website"],
+      "~~/*": ["./website/*"],
+      "@@": ["./website"],
+      "@@/*": ["./website/*"],
+      "~": ["./website"],
+      "~/*": ["./website/*"],
+      "@": ["./website"],
+      "@/*": ["./website/*"],
+      "assets": ["./website/assets"],
+      "public": ["./website/public"],
+      "public/*": ["./website/public/*"],
+      "#app": ["./node_modules/nuxt/dist/app"],
+      "#app/*": ["./node_modules/nuxt/dist/app/*"],
+      "vue-demi": ["./node_modules/nuxt/dist/app/compat/vue-demi"],
+      "#head": ["./node_modules/nuxt/dist/head/runtime"],
+      "#head/*": ["./node_modules/nuxt/dist/head/runtime/*"],
+      "#imports": ["./website/.nuxt/imports"],
+      "#build": ["./website/.nuxt"],
+      "#build/*": ["./website/.nuxt/*"],
+      "#components": ["./website/.nuxt/components"],
+      "#pinceau/types": ["./node_modules/.vite/pinceau/types.ts"],
+      "#pinceau": ["./node_modules/.vite/pinceau/index.ts"],
+      "pinceau.css": ["./node_modules/.vite/pinceau/index.css"]
+    }
+  },
+  "include": ["./website/.nuxt/nuxt.d.ts", "./src/**/*", "./website/**/*"],
+  "vueCompilerOptions": {
+    "plugins": ["./node_modules/pinceau/volar"]
+  }
 }
