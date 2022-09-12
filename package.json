@@ -21,9 +21,10 @@
     "tokens"
   ],
   "scripts": {
-    "dev": "nuxi dev website",
-    "build": "nuxi generate website",
-    "generate": "nuxi generate website",
+    "build": "nuxt-module-build",
+    "dev:website": "nuxi dev website",
+    "build:website": "nuxi generate website",
+    "generate:website": "nuxi generate website",
     "lint": "eslint . --fix",
     "release": "release-it"
   },
@@ -73,7 +74,7 @@
   },
   "build": {
     "entries": [
-      "./src/tokens.ts"
+      "./src/module.ts"
     ]
   }
 }

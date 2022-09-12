@@ -10,7 +10,6 @@ const module: any = defineNuxtModule<any>({
     const modulePath = createResolver(import.meta.url)
 
     nuxt.hook(
-      // @ts-expect-error - ??
       'pinceau:options',
       (options: PinceauOptions) => {
         options.configOrPaths = options?.configOrPaths || []
