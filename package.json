@@ -11,10 +11,7 @@
       "import": "./dist/module.mjs",
       "require": "./dist/module.cjs"
     },
-    "./tokens": {
-      "import": "./dist/tokens.mjs",
-      "require": "./dist/tokens.cjs"
-    }
+    "./tokens": "./dist/tokens.config.ts"
   },
   "files": [
     "dist",
