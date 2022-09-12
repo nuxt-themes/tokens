@@ -226,6 +226,10 @@
       "value": "0",
       "type": "spacing"
     },
+    "2": {
+      "value": "2px",
+      "type": "spacing"
+    },
     "4": {
       "value": "4px",
       "type": "spacing"
