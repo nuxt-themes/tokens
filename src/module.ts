@@ -32,7 +32,7 @@ const module: any = defineNuxtModule<ModuleOptions>({
     // Push fonts from `fonts` keys
     nuxt.options.head = nuxt.options.head || {}
     nuxt.options.head.link = nuxt.options.head.link || []
-    (options?.fonts || []).forEach(
+    ;(options?.fonts || []).forEach(
       (href) => {
         nuxt.options.head.link.push({
           rel: 'stylesheet',
