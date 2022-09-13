@@ -16,7 +16,7 @@ const module: any = defineNuxtModule<ModuleOptions>({
       'https://fonts.googleapis.com/css2?family=Fira+Code&display=swaps',
     ],
   }),
-  async setup(_, nuxt) {
+  async setup(options, nuxt) {
     const modulePath = createResolver(import.meta.url)
 
     nuxt.hook(
@@ -32,8 +32,7 @@ const module: any = defineNuxtModule<ModuleOptions>({
     // Push fonts from `fonts` keys
     nuxt.options.head = nuxt.options.head || {}
     nuxt.options.head.link = nuxt.options.head.link || []
-    const fonts = []
-    fonts.forEach(
+    (options?.fonts || []).forEach(
       (href) => {
         nuxt.options.head.link.push({
           rel: 'stylesheet',
