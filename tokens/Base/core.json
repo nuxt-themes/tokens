@@ -5,7 +5,7 @@
       "type": "fontFamilies"
     },
     "code": {
-      "value": "i-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace",
+      "value": "'Fira Code', monospace",
       "type": "fontFamilies"
     }
   },

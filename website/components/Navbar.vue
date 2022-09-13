@@ -21,7 +21,7 @@ defineProps({
 
 <template>
   <header>
-    <h1>@nuxt-themes/tokens</h1>
+    <h1>🖌 Pinceau</h1>
     <div>
       <TokenBadge :type="type" :clipboard-state="clipboardState" :token="hoveredToken" />
       <ThemeSelect />

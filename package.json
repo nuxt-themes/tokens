@@ -19,6 +19,7 @@
   ],
   "scripts": {
     "build": "nuxt-module-build",
+    "dev": "nuxi dev website",
     "dev:website": "nuxi dev website",
     "build:website": "nuxi generate website",
     "generate:website": "nuxi generate website",

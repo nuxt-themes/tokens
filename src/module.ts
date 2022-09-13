@@ -1,11 +1,21 @@
 import { createResolver, defineNuxtModule, installModule } from '@nuxt/kit'
 import type { PinceauOptions } from 'pinceau'
 
-const module: any = defineNuxtModule<any>({
+interface ModuleOptions {
+  fonts: string[]
+}
+
+const module: any = defineNuxtModule<ModuleOptions>({
   meta: {
     name: '@nuxt-themes/tokens',
     configKey: 'tokens',
   },
+  defaults: () => ({
+    fonts: [
+      'https://rsms.me/inter/inter.css',
+      'https://fonts.googleapis.com/css2?family=Fira+Code&display=swaps',
+    ],
+  }),
   async setup(_, nuxt) {
     const modulePath = createResolver(import.meta.url)
 
@@ -16,6 +26,19 @@ const module: any = defineNuxtModule<any>({
         if (Array.isArray(options?.configOrPaths)) {
           options.configOrPaths.push(modulePath.resolve())
         }
+      },
+    )
+
+    // Push fonts from `fonts` keys
+    nuxt.options.head = nuxt.options.head || {}
+    nuxt.options.head.link = nuxt.options.head.link || []
+    const fonts = []
+    fonts.forEach(
+      (href) => {
+        nuxt.options.head.link.push({
+          rel: 'stylesheet',
+          href,
+        })
       },
     )
 
