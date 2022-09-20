@@ -1,5 +1,3 @@
-import { defineNuxtConfig } from 'nuxt'
-
 export default defineNuxtConfig({
   meta: {
     title: '@nuxt-themes/tokens',
