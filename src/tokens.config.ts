@@ -11,8 +11,6 @@ const tokens = {
 
 delete tokens.text
 
-export { colors, typography, core }
-
 export default defineTheme({
   ...tokens,
 

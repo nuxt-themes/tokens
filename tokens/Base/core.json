@@ -226,6 +226,10 @@
       "value": "0",
       "type": "spacing"
     },
+    "1": {
+      "value": "1px",
+      "type": "spacing"
+    },
     "2": {
       "value": "2px",
       "type": "spacing"
@@ -240,6 +244,10 @@
     },
     "8": {
       "value": "8px",
+      "type": "spacing"
+    },
+    "10": {
+      "value": "10px",
       "type": "spacing"
     },
     "12": {
@@ -266,6 +274,10 @@
       "value": "40px",
       "type": "spacing"
     },
+    "44": {
+      "value": "44px",
+      "type": "spacing"
+    },
     "48": {
       "value": "48px",
       "type": "spacing"
@@ -284,6 +296,10 @@
     },
     "104": {
       "value": "104px",
+      "type": "spacing"
+    },
+    "140": {
+      "value": "140px",
       "type": "spacing"
     },
     "200": {
