@@ -14,12 +14,15 @@ delete tokens.text
 export default defineTheme({
   ...tokens,
 
-  screens: {
-    'xs': { value: '475px' },
-    'sm': { value: '640px' },
-    'md': { value: '768px' },
-    'lg': { value: '1024px' },
-    'xl': { value: '1280px' },
-    '2xl': { value: '1536px' },
+  media: {
+    'xs': { value: '(min-width: 475px)' },
+    'sm': { value: '(min-width: 640px)' },
+    'md': { value: '(min-width: 768px)' },
+    'lg': { value: '(min-width: 1024px)' },
+    'xl': { value: '(min-width: 1280px)' },
+    '2xl': { value: '(min-width: 1536px)' },
+    'rm': { value: '(prefers-reduced-motion: reduce)' },
+    // 'landscape': { value: 'only screen and (orientation: landscape)' },
+    // 'portrait': { value: 'only screen and (orientation: portrait)' },
   },
 })
