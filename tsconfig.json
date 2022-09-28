@@ -34,7 +34,8 @@
       "#build/*": ["./website/.nuxt/*"],
       "#components": ["./website/.nuxt/components"],
       "#pinceau/types": ["./node_modules/.vite/pinceau/types.ts"],
-      "#pinceau": ["./node_modules/.vite/pinceau/index.ts"],
+      "#pinceau/theme": ["./node_modules/.vite/pinceau/index.ts"],
+      "#pinceau/theme/flat": ["./node_modules/.vite/pinceau/flat.ts"],
       "pinceau.css": ["./node_modules/.vite/pinceau/index.css"]
     }
   },

@@ -1,5 +1,5 @@
 <script setup>
-import { theme } from '#pinceau'
+import { theme } from '#pinceau/theme'
 
 const categories = computed(
   () => {

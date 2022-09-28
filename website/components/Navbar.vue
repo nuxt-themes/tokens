@@ -45,8 +45,7 @@ css({
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
-    backgroundColor: 'rgba({colors.neutral.white}, 0.4)',
-    "@dark": {
+    '@dark': {
       backgroundColor: 'rgba({colors.neutral.black}, 0.4)',
     },
     a: {
@@ -56,9 +55,9 @@ css({
     h1: {
       fontSize: '{fontSizes.sm}',
       fontWeight: '{fontWeights.black}',
-      '@screen:xl': {
+      '@mq.xl': {
         fontSize: '{fontSizes.xl}',
-      }
+      },
     },
     '& > div': {
       display: 'flex',
@@ -71,7 +70,7 @@ css({
         height: '{size.16}',
         width: '{size.16}'
       },
-      '@screen:xl': {
+      '@mq.xl': {
         'svg, a > svg': {
           height: '{size.32}',
           width: '{size.32}'

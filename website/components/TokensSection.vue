@@ -86,7 +86,7 @@ css({
         flexDirection: 'row',
         flexWrap: 'wrap',
         gap: '{space.16}',
-        "@screen:lg": {
+        "@mq.lg": {
           gap: '{space.32}',
         }
       }

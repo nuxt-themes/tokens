@@ -27,8 +27,8 @@
     "release": "release-it"
   },
   "dependencies": {
-    "@nuxtjs/color-mode": "^3.1.5",
-    "@vueuse/core": "^9.2.0",
+    "@nuxtjs/color-mode": "^3.1.6",
+    "@vueuse/core": "^9.3.0",
     "pinceau": "latest",
     "style-value-types": "^5.1.2"
   },
@@ -36,12 +36,12 @@
     "@antfu/eslint-config": "^0.27.0",
     "@nuxt/content": "^2.1.1",
     "@nuxt/module-builder": "latest",
-    "eslint": "^8.23.1",
+    "eslint": "^8.24.0",
     "@vueuse/motion": "2.0.0-beta.22",
     "nuxt": "npm:nuxt3@latest",
     "nuxt-icon": "^0.1.6",
     "release-it": "^15.4.2",
-    "typescript": "^4.8.3"
+    "typescript": "^4.8.4"
   },
   "pnpm": {
     "peerDependencyRules": {
