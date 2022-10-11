@@ -41,6 +41,6 @@
   },
   "include": ["./website/.nuxt/nuxt.d.ts", "./src/**/*", "./website/**/*"],
   "vueCompilerOptions": {
-    "plugins": ["./node_modules/pinceau/volar"]
+    "plugins": ["pinceau/volar"]
   }
 }
