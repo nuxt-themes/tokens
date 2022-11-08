@@ -8,6 +8,7 @@ export default defineNuxtConfig({
     colorSchemeMode: 'class',
   },
   hooks: {
+    // @ts-ignore
     'pinceau:options': (options) => {
       return options
     },
