@@ -1,5 +1,3 @@
-import { defineNuxtConfig } from 'nuxt'
-
 export default defineNuxtConfig({
   modules: [
     '@nuxtjs/color-mode',
@@ -7,6 +5,12 @@ export default defineNuxtConfig({
   ],
   pinceau: {
     configFileName: 'tokens.config',
+    colorSchemeMode: 'class',
+  },
+  hooks: {
+    'pinceau:options': (options) => {
+      return options
+    },
   },
   colorMode: {
     classSuffix: '',
