@@ -20,7 +20,7 @@ const module: any = defineNuxtModule<ModuleOptions>({
     const modulePath = createResolver(import.meta.url)
 
     nuxt.hook(
-      // @ts-ignore
+      // @ts-expect-error - ?
       'pinceau:options',
       (options: PinceauOptions) => {
         options.configOrPaths = options?.configOrPaths || []
@@ -31,11 +31,11 @@ const module: any = defineNuxtModule<ModuleOptions>({
     )
 
     // Push fonts from `fonts` keys
-    nuxt.options.head = nuxt.options.head || {}
-    nuxt.options.head.link = nuxt.options.head.link || []
+    nuxt.options.app.head = nuxt.options.app.head || {}
+    nuxt.options.app.head.link = nuxt.options.app.head.link || []
     ;(options?.fonts || []).forEach(
       (href) => {
-        nuxt.options.head.link.push({
+        nuxt.options.app.head.link.push({
           rel: 'stylesheet',
           href,
         })
