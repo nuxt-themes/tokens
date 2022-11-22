@@ -177,7 +177,7 @@ css({
     textTransform: 'capitalize',
     fontFamily: '{fonts.base}',
     fontWeight: 'bold',
-    marginTop: '{space.4}',
+    marginTop: '{space.2}',
     fontSize: '{fontSizes.3xl}'
   },
   '.box': {
@@ -193,8 +193,8 @@ css({
       border: '2px solid {colors.neutral.white}',
       span: {
         position: 'absolute',
-        bottom: '{space.4}',
-        right: '{space.8}',
+        bottom: '{space.2}',
+        right: '{space.4}',
         opacity: '50%'
       }
     },

@@ -73,7 +73,7 @@ css({
     overflow: 'hidden',
     border: '1px solid {colors.green.500}',
     backgroundColor: 'rgba({colors.green.200}, 0.4)',
-    padding: '{space.4} {space.8}',
+    padding: '{space.1} {space.2}',
     borderRadius: '{radii.lg}',
     fontWeight: '{fontWeights.bold}',
     color: '{colors.neutral.white}',

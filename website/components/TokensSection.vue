@@ -71,7 +71,7 @@ css({
     textTransform: 'capitalize',
     fontFamily: '{fonts.base}',
     fontWeight: 'bold',
-    marginTop: '{space.32}'
+    marginTop: '{space.8}'
   },
   'h2': {
     fontSize: '{fontSizes.3xl}',
@@ -85,9 +85,9 @@ css({
         display: 'flex',
         flexDirection: 'row',
         flexWrap: 'wrap',
-        gap: '{space.16}',
+        gap: '{space.4}',
         "@mq.lg": {
-          gap: '{space.32}',
+          gap: '{space.16}',
         }
       }
     }
