@@ -15,10 +15,10 @@
     "xs": {
       "value": {
         "type": "dropShadow",
-        "x": "0px",
-        "y": "1px",
-        "blur": "2px",
-        "spread": "0px",
+        "offset-x": 0,
+        "offset-y": 1,
+        "blur": 2,
+        "spread": 0,
         "color": "#000",
         "opacity": "0.05"
       },
@@ -28,19 +28,19 @@
       "value": [
         {
           "type": "dropShadow",
-          "x": "0px",
-          "y": "1px",
-          "blur": "3px",
-          "spread": "0px",
+          "offset-x": 0,
+          "offset-y": 1,
+          "blur": 3,
+          "spread": 0,
           "color": "#000",
           "opacity": "0.1"
         },
         {
           "type": "dropShadow",
-          "x": "0px",
-          "y": "1px",
-          "blur": "2px",
-          "spread": "-1px",
+          "offset-x": 0,
+          "offset-y": 1,
+          "blur": 2,
+          "spread": -1,
           "color": "#000",
           "opacity": "0.1"
         }
@@ -51,19 +51,19 @@
       "value": [
         {
           "type": "dropShadow",
-          "x": "0px",
-          "y": "4px",
-          "blur": "6px",
-          "spread": "-1px",
+          "offset-x": 0,
+          "offset-y": 4,
+          "blur": 6,
+          "spread": -1,
           "color": "#000",
           "opacity": 0.1
         },
         {
           "type": "dropShadow",
-          "x": "0px",
-          "y": "2px",
-          "blur": "4px",
-          "spread": "-2px",
+          "offset-x": 0,
+          "offset-y": 2,
+          "blur": 4,
+          "spread": -2,
           "color": "#000",
           "opacity": 0.1
         }
@@ -74,19 +74,19 @@
       "value": [
         {
           "type": "dropShadow",
-          "x": "0px",
-          "y": "10px",
-          "blur": "15px",
-          "spread": "-3px",
+          "offset-x": 0,
+          "offset-y": 10,
+          "blur": 15,
+          "spread": -3,
           "color": "#000",
           "opacity": "0.1"
         },
         {
           "type": "dropShadow",
-          "x": "0px",
-          "y": "4px",
-          "blur": "6px",
-          "spread": "-4px",
+          "offset-x": 0,
+          "offset-y": 4,
+          "blur": 6,
+          "spread": -4,
           "color": "#000",
           "opacity": "0.1"
         }
@@ -97,19 +97,19 @@
       "value": [
         {
           "type": "dropShadow",
-          "x": "0px",
-          "y": "20px",
-          "blur": "25px",
-          "spread": "-5px",
+          "offset-x": 0,
+          "offset-y": 20,
+          "blur": 25,
+          "spread": -5,
           "color": "{colors.gray.400}",
           "opacity": "0.1"
         },
         {
           "type": "dropShadow",
-          "x": "0px",
-          "y": "8px",
-          "blur": "10px",
-          "spread": "-6px",
+          "offset-x": 0,
+          "offset-y": 8,
+          "blur": 10,
+          "spread": -6,
           "color": "#000",
           "opacity": "0.1"
         }
@@ -119,25 +119,17 @@
     "2xl": {
       "value": {
         "type": "dropShadow",
-        "x": "0px",
-        "y": "25px",
-        "blur": "50px",
-        "spread": "-12px",
+        "offset-x": 0,
+        "offset-y": 25,
+        "blur": 50,
+        "spread": -12,
         "color": "{colors.gray.900}",
         "opacity": "0.25"
       },
       "type": "boxShadow"
     },
     "none": {
-      "value": {
-        "type": "dropShadow",
-        "x": "0px",
-        "y": "0px",
-        "blur": "0px",
-        "spread": "0px",
-        "color": "#000",
-        "opacity": "0"
-      },
+      "value": "0px 0px 0px 0px transparent",
       "type": "boxShadow"
     }
   },
