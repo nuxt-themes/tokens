@@ -1,6 +1,6 @@
 {
   "name": "@nuxt-themes/tokens",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "description": "Nuxt official Design Tokens definition.",
   "author": "NuxtLabs <hello@nuxtlabs.com>",
   "license": "MIT",
