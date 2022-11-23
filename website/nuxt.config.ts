@@ -21,6 +21,10 @@ export default defineNuxtConfig({
 
   modules: ['../src/module', 'nuxt-icon', '@nuxt/content', '@vueuse/motion/nuxt'],
 
+  css: [
+    resolve('../node_modules/@nuxt-themes/typography/main.css')
+  ],
+
   components: [
     {
       path: resolve('./components'),

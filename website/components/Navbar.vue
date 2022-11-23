@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import type { PropType } from 'vue'
 import type { DesignToken } from 'pinceau'
-import { useMotion } from '@vueuse/motion'
 
 defineProps({
   hoveredToken: {
@@ -83,14 +82,14 @@ css({
       '& > * + *': {
         marginLeft: '{space.4}'
       },
-      'svg, a > svg': {
+      ':deep(.icon)': {
         height: '{size.16}',
         width: '{size.16}'
       },
       '@mq.xl': {
-        'svg, a > svg': {
-          height: '{size.32}',
-          width: '{size.32}'
+        ':deep(.icon)': {
+          height: '{size.24}',
+          width: '{size.24}'
         }
       }
     }
