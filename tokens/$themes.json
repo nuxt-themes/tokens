@@ -16,8 +16,8 @@
       "Themes/studio/typography": "enabled"
     },
     "$figmaStyleReferences": {
-      "neutral.white": "S:76105059f1e72ed4643dd3e97d9e4c99551531ec,",
-      "neutral.black": "S:ae978e7c993133456540bf8c8dca15e442838ca4,",
+      "white": "S:76105059f1e72ed4643dd3e97d9e4c99551531ec,",
+      "black": "S:ae978e7c993133456540bf8c8dca15e442838ca4,",
       "gray.50": "S:ff2c2ad4213ab57ae5d1a3df39b5cbc227176cd9,",
       "gray.100": "S:67866a2fe35d020b5fa410c01207ea4554a5d580,",
       "gray.200": "S:caf71154a7307ec7689316b7d4c0c7d600cc6b97,",
@@ -182,8 +182,8 @@
       "Themes/studio/typography": "disabled"
     },
     "$figmaStyleReferences": {
-      "neutral.white": "S:76105059f1e72ed4643dd3e97d9e4c99551531ec,",
-      "neutral.black": "S:ae978e7c993133456540bf8c8dca15e442838ca4,",
+      "white": "S:76105059f1e72ed4643dd3e97d9e4c99551531ec,",
+      "black": "S:ae978e7c993133456540bf8c8dca15e442838ca4,",
       "gray.50": "S:ff2c2ad4213ab57ae5d1a3df39b5cbc227176cd9,",
       "gray.100": "S:67866a2fe35d020b5fa410c01207ea4554a5d580,",
       "gray.200": "S:caf71154a7307ec7689316b7d4c0c7d600cc6b97,",

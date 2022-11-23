@@ -1,13 +1,11 @@
 {
-  "neutral": {
-    "white": {
-      "value": "#ffffff",
-      "type": "color"
-    },
-    "black": {
-      "value": "#0c0c0d",
-      "type": "color"
-    }
+  "white": {
+    "value": "#ffffff",
+    "type": "color"
+  },
+  "black": {
+    "value": "#0c0c0d",
+    "type": "color"
   },
   "gray": {
     "50": {

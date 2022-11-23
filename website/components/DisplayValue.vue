@@ -191,12 +191,12 @@ css({
     height: '256px',
     width: '256px',
     borderRadius: '{radii.xl}',
-    backgroundColor: '{colors.neutral.black}',
+    backgroundColor: '{colors.black}',
     '@dark': {
-      backgroundColor: '{colors.neutral.white}'
+      backgroundColor: '{colors.white}'
     },
     '&.color': {
-      border: '2px solid {colors.neutral.white}',
+      border: '2px solid {colors.white}',
       span: {
         position: 'absolute',
         bottom: '{space.2}',
@@ -205,13 +205,13 @@ css({
       }
     },
     '&.shadow': {
-      border: '2px solid {colors.neutral.white}',
+      border: '2px solid {colors.white}',
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
       width: '256px',
       height: '256px',
-      backgroundColor: '{colors.neutral.white}',
+      backgroundColor: '{colors.white}',
       '@dark': {
         backgroundColor: 'white'
       },
@@ -225,13 +225,13 @@ css({
         width: '128px',
         height: '128px',
         borderRadius: '{radii.xl}',
-        backgroundColor: '{colors.neutral.white}',
+        backgroundColor: '{colors.white}',
       },
     },
     '&.size': {
-      backgroundColor: '{colors.neutral.black}',
+      backgroundColor: '{colors.black}',
       '@dark': {
-        backgroundColor: '{colors.neutral.white}'
+        backgroundColor: '{colors.white}'
       },
      },
     '&.radii': {
@@ -242,17 +242,17 @@ css({
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
-      backgroundColor: '{colors.neutral.black}',
+      backgroundColor: '{colors.black}',
       "@dark": {
-        backgroundColor: '{colors.neutral.white}',
+        backgroundColor: '{colors.white}',
       },
       '& > div': {
-        backgroundColor: '{colors.neutral.white}',
+        backgroundColor: '{colors.white}',
         borderRadius: '{radii.lg}',
         width: '100%',
         height: '100%',
         "@dark": {
-          backgroundColor: '{colors.neutral.black}',
+          backgroundColor: '{colors.black}',
         }
       }
     },
@@ -265,15 +265,15 @@ css({
       alignItems: 'center',
       justifyContent: 'center',
       "@dark": {
-        backgroundColor: '{colors.neutral.white}',
+        backgroundColor: '{colors.white}',
       },
       '& > div': {
-        backgroundColor: '{colors.neutral.white}',
+        backgroundColor: '{colors.white}',
         borderRadius: '{radii.lg}',
         width: '50%',
         height: '50%',
         "@dark": {
-          backgroundColor: '{colors.neutral.black}',
+          backgroundColor: '{colors.black}',
         }
       }
     }

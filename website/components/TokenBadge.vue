@@ -76,7 +76,7 @@ css({
     padding: '{space.1} {space.2}',
     borderRadius: '{radii.lg}',
     fontWeight: '{fontWeights.bold}',
-    color: '{colors.neutral.white}',
+    color: '{colors.white}',
   }
 })
 </style>

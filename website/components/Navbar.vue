@@ -48,7 +48,7 @@ css({
     justifyContent: 'space-between',
     alignItems: 'center',
     '@dark': {
-      backgroundColor: 'rgba({colors.neutral.black}, 0.4)',
+      backgroundColor: 'rgba({colors.black}, 0.4)',
     },
     a: {
       lineHeight: '0'

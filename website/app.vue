@@ -32,11 +32,11 @@ css({
     width: '100%',
     height: '100%',
     overflowX: 'hidden',
-    backgroundColor: '{colors.neutral.white}',
-    color: '{colors.neutral.black}',
+    backgroundColor: '{colors.white}',
+    color: '{colors.black}',
     '@dark': {
-      backgroundColor: '{colors.neutral.black}',
-      color: '{colors.neutral.white}'
+      backgroundColor: '{colors.black}',
+      color: '{colors.white}'
     }
   },
   body: {
