@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { PropType } from 'vue'
-import type { DesignToken, PinceauTokens } from 'pinceau'
+import type { DesignToken } from 'pinceau'
 import { useVModel } from '@vueuse/core'
 
 const props = defineProps({
@@ -21,19 +21,15 @@ const props = defineProps({
     required: false,
   },
   tokens: {
-    type: Object as PropType<PinceauTokens>,
+    type: Object as PropType<any>,
     required: true,
-  },
-  flatten: {
-    type: Boolean,
-    required: false,
-    default: false,
   },
   nestings: {
     type: Array,
     required: false,
     default: () => ([]),
   },
+  ...variants
 })
 
 const emit = defineEmits(['update:hoveredToken', 'update:clipboardState'])
@@ -42,7 +38,7 @@ const hoveredToken = useVModel(props, 'hoveredToken', emit)
 
 const clipboardState = useVModel(props, 'clipboardState', emit)
 
-const values = computed(
+const values = computed<any>(
   () => {
     return Object.entries(props.tokens)
   },
@@ -51,14 +47,14 @@ const values = computed(
 
 <template>
   <section>
-    <NuxtLink v-if="name" :id="name" :to="`#${nestings.length ? [...nestings, name].join('-') : name}`">
-      <h2>{{ name }}</h2>
-    </NuxtLink>
+    <ProseH2 v-if="name" :id="name">
+      {{ name }}
+    </ProseH2>
 
-    <ul :class="{ flatten }">
+    <ul>
       <li v-for="[key, value] of values" :key="key">
         <DisplayValue v-if="value.value" v-model:hoveredToken="hoveredToken" v-model:clipboardState="clipboardState" :token="value" :type="type" :name="key" :nestings="[...nestings, name]" />
-        <TokensSection v-else v-model:hoveredToken="hoveredToken" v-model:clipboardState="clipboardState" :tokens="value" :type="type" :flatten="true" :name="key" :nestings="[...nestings, name]" />
+        <TokensSection v-else v-model:hoveredToken="hoveredToken" v-model:clipboardState="clipboardState" :tokens="value" :type="type" flatten :name="key" :nestings="[...nestings, name]" />
       </li>
     </ul>
   </section>
@@ -71,23 +67,25 @@ css({
     textTransform: 'capitalize',
     fontFamily: '{fonts.base}',
     fontWeight: 'bold',
-    marginTop: '{space.32}'
+    marginTop: '{space.8}'
   },
   'h2': {
-    fontSize: '{fontSizes.3xl}',
+    fontSize: '{fontSizes.6xl}',
   },
   'h3': {
     fontSize: '{fontSizes.2xl}',
   },
-  ul: {
-    variants: {
-      flatten: {
-        display: 'flex',
-        flexDirection: 'row',
-        flexWrap: 'wrap',
-        gap: '{space.16}',
-        "@mq.lg": {
-          gap: '{space.32}',
+  variants: {
+    flatten: {
+      true: {
+        ul: {
+          display: 'flex',
+          flexDirection: 'row',
+          flexWrap: 'wrap',
+          gap: '{space.4}',
+          "@mq.lg": {
+            gap: '{space.16}',
+          }
         }
       }
     }

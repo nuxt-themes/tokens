@@ -1,11 +1,44 @@
+import { createResolver } from "@nuxt/kit"
+
+const { resolve } = createResolver(import.meta.url)
+
 export default defineNuxtConfig({
-  meta: {
-    title: '@nuxt-themes/tokens',
-    meta: [{ name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1' }],
-    link: [{ rel: 'stylesheet', href: 'https://rsms.me/inter/inter.css' }],
+  app: {
+    head: {
+      title: '@nuxt-themes/tokens',
+      meta: [
+        {
+          key: 'meta',
+          name: 'viewport',
+          content: 'width=device-width, initial-scale=1, maximum-scale=1'
+        }
+      ],
+      link: [
+        { rel: 'stylesheet', href: 'https://rsms.me/inter/inter.css' }
+      ]
+    }
   },
 
   modules: ['../src/module', 'nuxt-icon', '@nuxt/content', '@vueuse/motion/nuxt'],
+
+  css: [
+    resolve('../node_modules/@nuxt-themes/typography/main.css')
+  ],
+
+  components: [
+    {
+      path: resolve('./components'),
+      global: true
+    },
+    {
+      path: resolve('../node_modules/@nuxt-themes/typography/components'),
+      global: true,
+    },
+    {
+      path: resolve('../node_modules/@nuxt-themes/typography/components/global'),
+      global: true,
+    }
+  ],
 
   content: {
     highlight: {

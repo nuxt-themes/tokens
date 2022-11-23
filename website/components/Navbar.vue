@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import type { PropType } from 'vue'
 import type { DesignToken } from 'pinceau'
-import { useMotion } from '@vueuse/motion'
 
 defineProps({
   hoveredToken: {
@@ -21,7 +20,10 @@ defineProps({
 
 <template>
   <header>
-    <h1>🖌 Pinceau</h1>
+    <h1>
+      <IconNuxt class="icon" />
+      <span>@nuxt-themes/tokens</span>
+    </h1>
     <div>
       <TokenBadge :type="type" :clipboard-state="clipboardState" :token="hoveredToken" />
       <ThemeSelect />
@@ -39,7 +41,7 @@ css({
     height: '{size.64}',
     backdropFilter: 'saturate(180%) blur(20px)',
     width: '100%',
-    padding: '{space.16} {space.32}',
+    padding: '{space.4} {space.8}',
     position: 'sticky',
     top: '{space.0}',
     display: 'flex',
@@ -53,10 +55,24 @@ css({
     },
     zIndex: '50',
     h1: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: '{space.2}',
       fontSize: '{fontSizes.sm}',
       fontWeight: '{fontWeights.black}',
       '@mq.xl': {
         fontSize: '{fontSizes.xl}',
+      },
+      '.icon': {
+        width: '{size.32}'
+      },
+      span: {
+        display: 'none'
+      },
+      '@mq.xs': {
+        span: {
+          display: 'inline',
+        }
       },
     },
     '& > div': {
@@ -64,16 +80,16 @@ css({
       justifyContent: 'space-between',
       alignItems: 'center',
       '& > * + *': {
-        marginLeft: '{space.16}'
+        marginLeft: '{space.4}'
       },
-      'svg, a > svg': {
+      ':deep(.icon)': {
         height: '{size.16}',
         width: '{size.16}'
       },
       '@mq.xl': {
-        'svg, a > svg': {
-          height: '{size.32}',
-          width: '{size.32}'
+        ':deep(.icon)': {
+          height: '{size.24}',
+          width: '{size.24}'
         }
       }
     }

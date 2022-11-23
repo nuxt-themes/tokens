@@ -2,17 +2,20 @@ import { defineTheme } from 'pinceau'
 import colors from '../tokens/Base/colors.json'
 import core from '../tokens/Base/core.json'
 import typography from '../tokens/Base/typography.json'
+import utils from './utils'
 
+// JSON Tokens
 const tokens = {
   colors,
   ...core,
   ...typography,
 }
 
-delete tokens.text
-
 export default defineTheme({
   ...tokens,
+
+  // Common utilities
+  utils,
 
   media: {
     'xs': { value: '(min-width: 475px)' },
@@ -22,16 +25,7 @@ export default defineTheme({
     'xl': { value: '(min-width: 1280px)' },
     '2xl': { value: '(min-width: 1536px)' },
     'rm': { value: '(prefers-reduced-motion: reduce)' },
-    // 'landscape': { value: 'only screen and (orientation: landscape)' },
-    // 'portrait': { value: 'only screen and (orientation: portrait)' },
-  },
-
-  screens: {
-    'xs': { value: '475px' },
-    'sm': { value: '640px' },
-    'md': { value: '768px' },
-    'lg': { value: '1024px' },
-    'xl': { value: '1280px' },
-    '2xl': { value: '1536px' },
-  },
+    'landscape': { value: 'only screen and (orientation: landscape)' },
+    'portrait': { value: 'only screen and (orientation: portrait)' },
+  }
 })

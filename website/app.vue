@@ -3,7 +3,7 @@ import { theme } from '#pinceau/theme'
 
 const categories = computed(
   () => {
-    return Object.entries(theme)
+    return Object.entries(theme).filter(([key]) => !(['prose', 'typography', 'text'].includes(key)))
   },
 )
 
@@ -31,8 +31,6 @@ css({
   'html, body': {
     width: '100%',
     height: '100%',
-    maxWidth: '100vw',
-    maxHeight: '100vh',
     overflowX: 'hidden',
     backgroundColor: '{colors.neutral.white}',
     color: '{colors.neutral.black}',
@@ -40,6 +38,9 @@ css({
       backgroundColor: '{colors.neutral.black}',
       color: '{colors.neutral.white}'
     }
+  },
+  body: {
+    overflowY: 'scroll'
   }
 })
 </style>
@@ -47,15 +48,12 @@ css({
 <style scoped lang="ts">
 css({
   section: {
-    padding: '{space.32}'
+    padding: '{space.8}'
   },
   '.nuxt-themes-tokens': {
     width: '100%',
     marginLeft: 'auto',
     marginRight: 'auto',
-    '.motd': {
-      lineHeight: '{leads.loose}'
-    }
   }
 })
 </style>

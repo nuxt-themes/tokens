@@ -65,7 +65,7 @@ const enter = () => {
   hoveredToken.value = props.token
 }
 
-const isScreen = computed(() => props.nestings.includes('screens'))
+const isScreen = computed(() => props.nestings.includes('media'))
 
 const isColor = computed(() => vt.color.test(tokenValue.value))
 
@@ -90,6 +90,8 @@ const isFontSizes = computed(() => props.nestings.includes('fontSizes'))
 const isLetterSpacings = computed(() => props.nestings.includes('letterSpacings'))
 
 const isLeads = computed(() => props.nestings.includes('leads'))
+
+const isText = computed(() => props.nestings.includes('text'))
 </script>
 
 <template>
@@ -159,7 +161,7 @@ const isLeads = computed(() => props.nestings.includes('leads'))
         <span>{{ tokenValue }}</span>
       </template>
       <template v-if="isLeads">
-        <PlaceholderText single :style="{ lineHeight: tokenValue }" />
+        <PlaceholderText single class="leads" :style="{ lineHeight: tokenValue }" />
         <span>{{ tokenValue }}</span>
       </template>
       <p>{{ token.attributes.variable }}</p>
@@ -172,12 +174,16 @@ css({
   div: {
     cursor: 'copy'
   },
+  ':deep(.leads)': {
+    backgroundColor: '{colors.green.500}',
+    borderRadius: '{radii.sm}'
+  },
   'h3': {
     fontStyle: 'capitalize',
     textTransform: 'capitalize',
     fontFamily: '{fonts.base}',
     fontWeight: 'bold',
-    marginTop: '{space.4}',
+    marginTop: '{space.2}',
     fontSize: '{fontSizes.3xl}'
   },
   '.box': {
@@ -193,8 +199,8 @@ css({
       border: '2px solid {colors.neutral.white}',
       span: {
         position: 'absolute',
-        bottom: '{space.4}',
-        right: '{space.8}',
+        bottom: '{space.2}',
+        right: '{space.4}',
         opacity: '50%'
       }
     },
@@ -279,6 +285,6 @@ css({
     '& > span': {
       fontWeight: '{fontWeights.bold}'
     }
-  }
+  },
 })
 </style>
