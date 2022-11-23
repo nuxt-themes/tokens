@@ -29,7 +29,7 @@ const module: any = defineNuxtModule({
       tsConfig.compilerOptions.paths['@nuxt-themes/tokens/config'] = [modulePath.resolve('./tokens.config.ts')]
     })
 
-    await installModule('@nuxtjs/color-mode')
+    await installModule('@nuxtjs/color-mode', { classSuffix: '' })
     
     await installModule('pinceau/nuxt', { configFileName: 'tokens.config' })
   },

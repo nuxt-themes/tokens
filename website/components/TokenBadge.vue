@@ -56,7 +56,7 @@ const { apply, leave } = useMotion(
 </script>
 
 <template>
-  <Transition @enter="apply('enter')" @leave="(_, done) => leave(done)">
+  <Transition @enter="apply('enter')" @leave="(_: any, done: any) => leave(done)">
     <button v-if="token" ref="badge">
       {{ displayValue }}
       <ClipboardState :clipboard-state="clipboardState" />

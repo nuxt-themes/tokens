@@ -1,14 +1,12 @@
 {
   "width": {
     "screen": {
-      "value": "100vw",
-      "type": "dimensions"
+      "value": "100vw"
     }
   },
   "height": {
     "screen": {
-      "value": "100vh",
-      "type": "dimensions"
+      "value": "100vh"
     }
   },
   "shadows": {
@@ -21,8 +19,7 @@
         "spread": 0,
         "color": "#000",
         "opacity": "0.05"
-      },
-      "type": "boxShadow"
+      }
     },
     "sm": {
       "value": [
@@ -44,8 +41,7 @@
           "color": "#000",
           "opacity": "0.1"
         }
-      ],
-      "type": "boxShadow"
+      ]
     },
     "md": {
       "value": [
@@ -67,8 +63,7 @@
           "color": "#000",
           "opacity": 0.1
         }
-      ],
-      "type": "boxShadow"
+      ]
     },
     "lg": {
       "value": [
@@ -90,8 +85,7 @@
           "color": "#000",
           "opacity": "0.1"
         }
-      ],
-      "type": "boxShadow"
+      ]
     },
     "xl": {
       "value": [
@@ -113,8 +107,7 @@
           "color": "#000",
           "opacity": "0.1"
         }
-      ],
-      "type": "boxShadow"
+      ]
     },
     "2xl": {
       "value": {
@@ -125,324 +118,248 @@
         "spread": -12,
         "color": "{colors.gray.900}",
         "opacity": "0.25"
-      },
-      "type": "boxShadow"
+      }
     },
     "none": {
-      "value": "0px 0px 0px 0px transparent",
-      "type": "boxShadow"
+      "value": "0px 0px 0px 0px transparent"
     }
   },
   "radii": {
     "none": {
       "value": "0px",
-      "type": "borderRadius",
       "description": "0px"
     },
     "2xs": {
       "value": "0.125rem",
-      "type": "borderRadius",
       "description": "2px"
     },
     "xs": {
       "value": "0.25rem",
-      "type": "borderRadius",
       "description": "4px"
     },
     "sm": {
       "value": "0.375rem",
-      "type": "borderRadius",
       "description": "6px"
     },
     "md": {
       "value": "0.5rem",
-      "type": "borderRadius",
       "description": "8px"
     },
     "lg": {
       "value": "0.75rem",
-      "type": "borderRadius",
       "description": "12px"
     },
     "xl": {
       "value": "1rem",
-      "type": "borderRadius",
       "description": "16px"
     },
     "2xl": {
       "value": "1.5rem",
-      "type": "borderRadius",
       "description": "24px"
     },
     "3xl": {
       "value": "1.75rem",
-      "type": "borderRadius",
       "description": "24px"
     },
     "full": {
       "value": "9999px",
-      "type": "borderRadius",
       "description": "A very large value to handle every cases"
     }
   },
   "size": {
     "0": {
-      "value": "0px",
-      "type": "sizing"
+      "value": "0px"
     },
     "2": {
-      "value": "2px",
-      "type": "sizing"
+      "value": "2px"
     },
     "4": {
-      "value": "4px",
-      "type": "sizing"
+      "value": "4px"
     },
     "6": {
-      "value": "6px",
-      "type": "sizing"
+      "value": "6px"
     },
     "8": {
-      "value": "8px",
-      "type": "sizing"
+      "value": "8px"
     },
     "12": {
-      "value": "12px",
-      "type": "sizing"
+      "value": "12px"
     },
     "16": {
-      "value": "16px",
-      "type": "sizing"
+      "value": "16px"
     },
     "20": {
-      "value": "20px",
-      "type": "sizing"
+      "value": "20px"
     },
     "24": {
-      "value": "24px",
-      "type": "sizing"
+      "value": "24px"
     },
     "32": {
-      "value": "32px",
-      "type": "sizing"
+      "value": "32px"
     },
     "40": {
-      "value": "40px",
-      "type": "sizing"
+      "value": "40px"
     },
     "48": {
-      "value": "48px",
-      "type": "sizing"
+      "value": "48px"
     },
     "56": {
-      "value": "56px",
-      "type": "sizing"
+      "value": "56px"
     },
     "64": {
-      "value": "64px",
-      "type": "sizing"
+      "value": "64px"
     },
     "80": {
-      "value": "80px",
-      "type": "sizing"
+      "value": "80px"
     },
     "104": {
-      "value": "104px",
-      "type": "sizing"
+      "value": "104px"
     },
     "200": {
-      "value": "200px",
-      "type": "sizing"
+      "value": "200px"
     },
     "xs": {
-      "value": "20rem",
-      "type": "sizing"
+      "value": "20rem"
     },
     "sm": {
-      "value": "24rem",
-      "type": "sizing"
+      "value": "24rem"
     },
     "md": {
-      "value": "28rem",
-      "type": "sizing"
+      "value": "28rem"
     },
     "lg": {
-      "value": "32rem",
-      "type": "sizing"
+      "value": "32rem"
     },
     "xl": {
-      "value": "36rem",
-      "type": "sizing"
+      "value": "36rem"
     },
     "2xl": {
-      "value": "42rem",
-      "type": "sizing"
+      "value": "42rem"
     },
     "3xl": {
-      "value": "48rem",
-      "type": "sizing"
+      "value": "48rem"
     },
     "4xl": {
-      "value": "56rem",
-      "type": "sizing"
+      "value": "56rem"
     },
     "5xl": {
-      "value": "64rem",
-      "type": "sizing"
+      "value": "64rem"
     },
     "6xl": {
-      "value": "72rem",
-      "type": "sizing"
+      "value": "72rem"
     },
     "7xl": {
-      "value": "80rem",
-      "type": "sizing"
+      "value": "80rem"
     },
     "full": {
-      "value": "100%",
-      "type": "sizing"
+      "value": "100%"
     }
   },
   "space": {
     "0": {
-      "value": "0px",
-      "type": "spacing"
+      "value": "0px"
     },
     "1": {
-      "value": "0.25rem",
-      "type": "spacing"
+      "value": "0.25rem"
     },
     "2": {
-      "value": "0.5rem",
-      "type": "spacing"
+      "value": "0.5rem"
     },
     "3": {
-      "value": "0.75rem",
-      "type": "spacing"
+      "value": "0.75rem"
     },
     "4": {
-      "value": "1rem",
-      "type": "spacing"
+      "value": "1rem"
     },
     "5": {
-      "value": "1.25rem",
-      "type": "spacing"
+      "value": "1.25rem"
     },
     "6": {
-      "value": "1.5rem",
-      "type": "spacing"
+      "value": "1.5rem"
     },
     "7": {
-      "value": "1.75rem",
-      "type": "spacing"
+      "value": "1.75rem"
     },
     "8": {
-      "value": "2rem",
-      "type": "spacing"
+      "value": "2rem"
     },
     "9": {
-      "value": "2.25rem",
-      "type": "spacing"
+      "value": "2.25rem"
     },
     "10": {
-      "value": "2.5rem",
-      "type": "spacing"
+      "value": "2.5rem"
     },
     "11": {
-      "value": "2.75rem",
-      "type": "spacing"
+      "value": "2.75rem"
     },
     "12": {
-      "value": "3rem",
-      "type": "spacing"
+      "value": "3rem"
     },
     "14": {
-      "value": "3.5rem",
-      "type": "spacing"
+      "value": "3.5rem"
     },
     "16": {
-      "value": "4rem",
-      "type": "spacing"
+      "value": "4rem"
     },
     "20": {
-      "value": "5rem",
-      "type": "spacing"
+      "value": "5rem"
     },
     "24": {
-      "value": "6rem",
-      "type": "spacing"
+      "value": "6rem"
     },
     "28": {
-      "value": "7rem",
-      "type": "spacing"
+      "value": "7rem"
     },
     "32": {
-      "value": "8rem",
-      "type": "spacing"
+      "value": "8rem"
     },
     "36": {
-      "value": "9rem",
-      "type": "spacing"
+      "value": "9rem"
     },
     "40": {
-      "value": "10rem",
-      "type": "spacing"
+      "value": "10rem"
     },
     "44": {
-      "value": "11rem",
-      "type": "spacing"
+      "value": "11rem"
     },
     "48": {
-      "value": "12rem",
-      "type": "spacing"
+      "value": "12rem"
     },
     "52": {
-      "value": "13rem",
-      "type": "spacing"
+      "value": "13rem"
     },
     "56": {
-      "value": "14rem",
-      "type": "spacing"
+      "value": "14rem"
     },
     "60": {
-      "value": "15rem",
-      "type": "spacing"
+      "value": "15rem"
     },
     "64": {
-      "value": "16rem",
-      "type": "spacing"
+      "value": "16rem"
     },
     "72": {
-      "value": "18rem",
-      "type": "spacing"
+      "value": "18rem"
     },
     "80": {
-      "value": "20rem",
-      "type": "spacing"
+      "value": "20rem"
     },
     "96": {
-      "value": "24rem",
-      "type": "spacing"
+      "value": "24rem"
     },
     "px": {
-      "value": "1px",
-      "type": "spacing"
+      "value": "1px"
     },
     "0-5": {
-      "value": "0.125rem",
-      "type": "spacing"
+      "value": "0.125rem"
     },
     "1-5": {
-      "value": "0.375rem",
-      "type": "spacing"
+      "value": "0.375rem"
     },
     "2-5": {
-      "value": "0.625rem",
-      "type": "spacing"
+      "value": "0.625rem"
     },
     "3-5": {
-      "value": "0.875rem",
-      "type": "spacing"
+      "value": "0.875rem"
     }
   },
   "borderWidths": {

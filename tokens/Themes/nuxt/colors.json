@@ -1,78 +1,60 @@
 {
   "primary": {
     "50": {
-      "value": "{gray.50}",
-      "type": "color"
+      "value": "{gray.50}"
     },
     "100": {
-      "value": "{gray.100}",
-      "type": "color"
+      "value": "{gray.100}"
     },
     "200": {
-      "value": "{gray.200}",
-      "type": "color"
+      "value": "{gray.200}"
     },
     "300": {
-      "value": "{gray.300}",
-      "type": "color"
+      "value": "{gray.300}"
     },
     "400": {
-      "value": "{gray.400}",
-      "type": "color"
+      "value": "{gray.400}"
     },
     "500": {
-      "value": "{gray.500}",
-      "type": "color"
+      "value": "{gray.500}"
     },
     "600": {
-      "value": "{gray.600}",
-      "type": "color"
+      "value": "{gray.600}"
     },
     "700": {
-      "value": "{gray.700}",
-      "type": "color"
+      "value": "{gray.700}"
     },
     "800": {
-      "value": "{gray.800}",
-      "type": "color"
+      "value": "{gray.800}"
     },
     "900": {
-      "value": "{gray.900}",
-      "type": "color"
+      "value": "{gray.900}"
     }
   },
   "gradient": {
     "270": {
-      "value": "linear-gradient(90deg, #0047e1 0%, #36e4da 50%, #00dc82 99.48%)",
-      "type": "color"
+      "value": "linear-gradient(90deg, #0047e1 0%, #36e4da 50%, #00dc82 99.48%)"
     },
     "75°": {
-      "value": "linear-gradient(90deg, #00dc82 0%, #36e4da 50%, #0047e1 100%)",
-      "type": "color"
+      "value": "linear-gradient(90deg, #00dc82 0%, #36e4da 50%, #0047e1 100%)"
     },
     "90°": {
-      "value": "linear-gradient(90deg, #00dc82 0%, #36e4da 50%, #0047e1 100%)",
-      "type": "color"
+      "value": "linear-gradient(90deg, #00dc82 0%, #36e4da 50%, #0047e1 100%)"
     },
     "105°": {
-      "value": "linear-gradient(90deg, #00dc82 0%, #36e4da 50%, #0047e1 100%)",
-      "type": "color"
+      "value": "linear-gradient(90deg, #00dc82 0%, #36e4da 50%, #0047e1 100%)"
     },
     "180°": {
-      "value": "linear-gradient(180deg, #00dc82 0%, #36e4da 50%, #0047e1 100%)",
-      "type": "color"
+      "value": "linear-gradient(180deg, #00dc82 0%, #36e4da 50%, #0047e1 100%)"
     },
     "255°": {
-      "value": "linear-gradient(90deg, #0047e1 0%, #36e4da 50%, #00dc82 92.71%)",
-      "type": "color"
+      "value": "linear-gradient(90deg, #0047e1 0%, #36e4da 50%, #00dc82 92.71%)"
     },
     "285°": {
-      "value": "linear-gradient(90deg, #0047e1 0%, #36e4da 50%, #00dc82 100%)",
-      "type": "color"
+      "value": "linear-gradient(90deg, #0047e1 0%, #36e4da 50%, #00dc82 100%)"
     },
     "360°": {
-      "value": "linear-gradient(180deg, #0047e1 0%, #36e4da 50%, #00dc82 100%)",
-      "type": "color"
+      "value": "linear-gradient(180deg, #0047e1 0%, #36e4da 50%, #00dc82 100%)"
     }
   }
 }

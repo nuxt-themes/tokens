@@ -1,238 +1,227 @@
 {
   "fonts": {
     "sans": {
-      "value": "ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji",
-      "type": "fontFamilies"
+      "value": "ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji"
     },
     "serif": {
-      "value": "ui-serif, Georgia, Cambria, Times New Roman, Times, serif",
-      "type": "fontFamilies"
+      "value": "ui-serif, Georgia, Cambria, Times New Roman, Times, serif"
     },
     "mono": {
-      "value": "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace",
-      "type": "fontFamilies"
+      "value": "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace"
     }
   },
   "fontWeights": {
     "thin": {
-      "value": "100",
-      "type": "fontWeights"
+      "value": "100"
     },
     "extralight": {
-      "value": "200",
-      "type": "fontWeights"
+      "value": "200"
     },
     "light": {
-      "value": "300",
-      "type": "fontWeights"
+      "value": "300"
     },
     "normal": {
-      "value": "400",
-      "type": "fontWeights"
+      "value": "400"
     },
     "medium": {
-      "value": "500",
-      "type": "fontWeights"
+      "value": "500"
     },
     "semibold": {
-      "value": "600",
-      "type": "fontWeights"
+      "value": "600"
     },
     "bold": {
-      "value": "700",
-      "type": "fontWeights"
+      "value": "700"
     },
     "extrabold": {
-      "value": "800",
-      "type": "fontWeights"
+      "value": "800"
     },
     "black": {
-      "value": "900",
-      "type": "fontWeights"
+      "value": "900"
     }
   },
   "fontSizes": {
     "xs": {
-      "value": "0.75rem",
-      "type": "fontSizes"
+      "value": "0.75rem"
     },
     "sm": {
-      "value": "0.875rem",
-      "type": "fontSizes"
+      "value": "0.875rem"
     },
     "base": {
-      "value": "1rem",
-      "type": "fontSizes"
+      "value": "1rem"
     },
     "lg": {
-      "value": "1.125rem",
-      "type": "fontSizes"
+      "value": "1.125rem"
     },
     "xl": {
-      "value": "1.25rem",
-      "type": "fontSizes"
+      "value": "1.25rem"
     },
     "2xl": {
-      "value": "1.5rem",
-      "type": "fontSizes"
+      "value": "1.5rem"
     },
     "3xl": {
-      "value": "1.875rem",
-      "type": "fontSizes"
+      "value": "1.875rem"
     },
     "4xl": {
-      "value": "2.25rem",
-      "type": "fontSizes"
+      "value": "2.25rem"
     },
     "5xl": {
-      "value": "3rem",
-      "type": "fontSizes"
+      "value": "3rem"
     },
     "6xl": {
-      "value": "3.75rem",
-      "type": "fontSizes"
+      "value": "3.75rem"
     },
     "7xl": {
-      "value": "4.5rem",
-      "type": "fontSizes"
+      "value": "4.5rem"
     },
     "8xl": {
-      "value": "6rem",
-      "type": "fontSizes"
+      "value": "6rem"
     },
     "9xl": {
-      "value": "8rem",
-      "type": "fontSizes"
+      "value": "8rem"
     }
   },
   "letterSpacings": {
     "tighter": {
-      "value": "-0.05em",
-      "type": "letterSpacing"
+      "value": "-0.05em"
     },
     "tight": {
-      "value": "-0.025em",
-      "type": "letterSpacing"
+      "value": "-0.025em"
     },
     "normal": {
-      "value": "0em",
-      "type": "letterSpacing"
+      "value": "0em"
     },
     "wide": {
-      "value": "0.025em",
-      "type": "letterSpacing"
+      "value": "0.025em"
     },
     "wider": {
-      "value": "0.05em",
-      "type": "letterSpacing"
+      "value": "0.05em"
     },
     "widest": {
-      "value": "0.1em",
-      "type": "letterSpacing"
+      "value": "0.1em"
     }
   },
   "leads": {
     "1": {
-      "value": ".025rem",
-      "type": "lineHeights"
+      "value": ".025rem"
     },
     "2": {
-      "value": ".5rem",
-      "type": "lineHeights"
+      "value": ".5rem"
     },
     "3": {
-      "value": ".75rem",
-      "type": "lineHeights"
+      "value": ".75rem"
     },
     "4": {
-      "value": "1rem",
-      "type": "lineHeights"
+      "value": "1rem"
     },
     "5": {
-      "value": "1.25rem",
-      "type": "lineHeights"
+      "value": "1.25rem"
     },
     "6": {
-      "value": "1.5rem",
-      "type": "lineHeights"
+      "value": "1.5rem"
     },
     "7": {
-      "value": "1.75rem",
-      "type": "lineHeights"
+      "value": "1.75rem"
     },
     "8": {
-      "value": "2rem",
-      "type": "lineHeights"
+      "value": "2rem"
     },
     "9": {
-      "value": "2.25rem",
-      "type": "lineHeights"
+      "value": "2.25rem"
     },
     "10": {
-      "value": "2.5rem",
-      "type": "lineHeights"
+      "value": "2.5rem"
     },
     "none": {
-      "value": "1",
-      "type": "lineHeights"
+      "value": "1"
     },
     "tight": {
-      "value": "1.25",
-      "type": "lineHeights"
+      "value": "1.25"
     },
     "snug": {
-      "value": "1.375",
-      "type": "lineHeights"
+      "value": "1.375"
     },
     "normal": {
-      "value": "1.5",
-      "type": "lineHeights"
+      "value": "1.5"
     },
     "relaxed": {
-      "value": "1.625",
-      "type": "lineHeights"
+      "value": "1.625"
     },
     "loose": {
-      "value": "2",
-      "type": "lineHeights"
+      "value": "2"
     }
   },
   "text": {
     "xs": {
-      "fontSize": "{fontSizes.xs}",
-      "lineHeight": "{leads.4}"
+      "fontSize": {
+        "value": "{fontSizes.xs}"
+      },
+      "lineHeight": {
+        "value": "{leads.4}"
+      }
     },
     "sm": {
-      "fontSize": "{fontSizes.sm}",
-      "lineHeight": "{leads.5}"
+      "fontSize": {
+        "value": "{fontSizes.sm}"
+      },
+      "lineHeight": {
+        "value": "{leads.5}"
+      }
     },
     "base": {
-      "fontSize": "{fontSizes.base}",
-      "lineHeight": "{leads.6}"
+      "fontSize": {
+        "value": "{fontSizes.base}"
+      },
+      "lineHeight": {
+        "value": "{leads.6}"
+      }
     },
     "lg": {
-      "fontSize": "{fontSizes.lg}",
-      "lineHeight": "{leads.7}"
+      "fontSize": {
+        "value": "{fontSizes.lg}"
+      },
+      "lineHeight": {
+        "value": "{leads.7}"
+      }
     },
     "2xl": {
-      "fontSize": "{fontSizes.2xl}",
-      "lineHeight": "{leads.8}"
+      "fontSize": {
+        "value": "{fontSizes.2xl}"
+      },
+      "lineHeight": {
+        "value": "{leads.8}"
+      }
     },
     "3xl": {
-      "fontSize": "{fontSizes.3xl}",
-      "lineHeight": "{leads.9}"
+      "fontSize": {
+        "value": "{fontSizes.3xl}"
+      },
+      "lineHeight": {
+        "value": "{leads.9}"
+      }
     },
     "4xl": {
-      "fontSize": "{fontSizes.4xl}",
-      "lineHeight": "{leads.10}"
+      "fontSize": {
+        "value": "{fontSizes.4xl}"
+      },
+      "lineHeight": {
+        "value": "{leads.10}"
+      }
     },
     "5xl": {
-      "fontSize": "{fontSizes.5xl}",
-      "lineHeight": "{leads.none}"
+      "fontSize": {
+        "value": "{fontSizes.5xl}"
+      },
+      "lineHeight": {
+        "value": "{leads.none}"
+      }
     },
     "6xl": {
-      "fontSize": "{fontSizes.6xl}",
-      "lineHeight": "{leads.none}"
+      "fontSize": {
+        "value": "{fontSizes.6xl}"
+      },
+      "lineHeight": {
+        "value": "{leads.none}"
+      }
     }
   }
 }
