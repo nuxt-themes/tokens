@@ -30,6 +30,15 @@ const module: any = defineNuxtModule<ModuleOptions>({
       },
     )
 
+    // Inject sub-exports types to tsconfig paths
+    nuxt.hook('prepare:types', (opts) => {
+      const tsConfig: typeof opts.tsConfig & { vueCompilerOptions?: any } = opts.tsConfig
+      tsConfig.compilerOptions = tsConfig.compilerOptions || {}
+      tsConfig.compilerOptions.paths = tsConfig.compilerOptions.paths || {}
+      tsConfig.compilerOptions.paths['@nuxt-themes/tokens/tokens'] = [modulePath.resolve('./tokens.config.ts')]
+      tsConfig.compilerOptions.paths['@nuxt-themes/tokens/config'] = [modulePath.resolve('./tokens.config.ts')]
+    })
+
     // Push fonts from `fonts` keys
     nuxt.options.app.head = nuxt.options.app.head || {}
     nuxt.options.app.head.link = nuxt.options.app.head.link || []
