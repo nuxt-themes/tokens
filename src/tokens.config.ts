@@ -1,11 +1,11 @@
 import { defineTheme } from 'pinceau'
-import colors from '../tokens/Base/colors.json'
+import color from '../tokens/Base/colors.json'
 import core from '../tokens/Base/core.json'
 import typography from '../tokens/Base/typography.json'
 
 // JSON Tokens
 const tokens = {
-  colors,
+  color,
   ...core,
   ...typography,
 }

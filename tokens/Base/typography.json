@@ -1,5 +1,5 @@
 {
-  "fonts": {
+  "font": {
     "sans": {
       "value": "ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji"
     },
@@ -10,7 +10,7 @@
       "value": "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace"
     }
   },
-  "fontWeights": {
+  "fontWeight": {
     "thin": {
       "value": "100"
     },
@@ -39,7 +39,7 @@
       "value": "900"
     }
   },
-  "fontSizes": {
+  "fontSize": {
     "xs": {
       "value": "0.75rem"
     },
@@ -80,7 +80,7 @@
       "value": "8rem"
     }
   },
-  "letterSpacings": {
+  "letterSpacing": {
     "tighter": {
       "value": "-0.05em"
     },
@@ -100,7 +100,7 @@
       "value": "0.1em"
     }
   },
-  "leads": {
+  "lead": {
     "1": {
       "value": ".025rem"
     },
@@ -153,74 +153,74 @@
   "text": {
     "xs": {
       "fontSize": {
-        "value": "{fontSizes.xs}"
+        "value": "{fontSize.xs}"
       },
       "lineHeight": {
-        "value": "{leads.4}"
+        "value": "{lead.4}"
       }
     },
     "sm": {
       "fontSize": {
-        "value": "{fontSizes.sm}"
+        "value": "{fontSize.sm}"
       },
       "lineHeight": {
-        "value": "{leads.5}"
+        "value": "{lead.5}"
       }
     },
     "base": {
       "fontSize": {
-        "value": "{fontSizes.base}"
+        "value": "{fontSize.base}"
       },
       "lineHeight": {
-        "value": "{leads.6}"
+        "value": "{lead.6}"
       }
     },
     "lg": {
       "fontSize": {
-        "value": "{fontSizes.lg}"
+        "value": "{fontSize.lg}"
       },
       "lineHeight": {
-        "value": "{leads.7}"
+        "value": "{lead.7}"
       }
     },
     "2xl": {
       "fontSize": {
-        "value": "{fontSizes.2xl}"
+        "value": "{fontSize.2xl}"
       },
       "lineHeight": {
-        "value": "{leads.8}"
+        "value": "{lead.8}"
       }
     },
     "3xl": {
       "fontSize": {
-        "value": "{fontSizes.3xl}"
+        "value": "{fontSize.3xl}"
       },
       "lineHeight": {
-        "value": "{leads.9}"
+        "value": "{lead.9}"
       }
     },
     "4xl": {
       "fontSize": {
-        "value": "{fontSizes.4xl}"
+        "value": "{fontSize.4xl}"
       },
       "lineHeight": {
-        "value": "{leads.10}"
+        "value": "{lead.10}"
       }
     },
     "5xl": {
       "fontSize": {
-        "value": "{fontSizes.5xl}"
+        "value": "{fontSize.5xl}"
       },
       "lineHeight": {
-        "value": "{leads.none}"
+        "value": "{lead.none}"
       }
     },
     "6xl": {
       "fontSize": {
-        "value": "{fontSizes.6xl}"
+        "value": "{fontSize.6xl}"
       },
       "lineHeight": {
-        "value": "{leads.none}"
+        "value": "{lead.none}"
       }
     }
   }

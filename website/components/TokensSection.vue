@@ -65,15 +65,15 @@ css({
   'h2, h3': {
     fontStyle: 'capitalize',
     textTransform: 'capitalize',
-    fontFamily: '{fonts.base}',
+    fontFamily: '{font.sans}',
     fontWeight: 'bold',
     marginTop: '{space.8}'
   },
   'h2': {
-    fontSize: '{fontSizes.6xl}',
+    fontSize: '{fontSize.6xl}',
   },
   'h3': {
-    fontSize: '{fontSizes.2xl}',
+    fontSize: '{fontSize.2xl}',
   },
   variants: {
     flatten: {
@@ -83,7 +83,7 @@ css({
           flexDirection: 'row',
           flexWrap: 'wrap',
           gap: '{space.4}',
-          "@mq.lg": {
+          "@lg": {
             gap: '{space.16}',
           }
         }

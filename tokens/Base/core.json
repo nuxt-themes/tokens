@@ -9,7 +9,7 @@
       "value": "100vh"
     }
   },
-  "shadows": {
+  "shadow": {
     "xs": {
       "value": {
         "type": "dropShadow",
@@ -95,7 +95,7 @@
           "offset-y": 20,
           "blur": 25,
           "spread": -5,
-          "color": "{colors.gray.400}",
+          "color": "{color.gray.400}",
           "opacity": "0.1"
         },
         {
@@ -116,7 +116,7 @@
         "offset-y": 25,
         "blur": 50,
         "spread": -12,
-        "color": "{colors.gray.900}",
+        "color": "{color.gray.900}",
         "opacity": "0.25"
       }
     },
@@ -362,7 +362,7 @@
       "value": "0.875rem"
     }
   },
-  "borderWidths": {
+  "borderWidth": {
     "noBorder": {
       "value": "0",
       "type": "borderWidth"

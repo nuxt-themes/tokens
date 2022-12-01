@@ -48,7 +48,7 @@ css({
     justifyContent: 'space-between',
     alignItems: 'center',
     '@dark': {
-      backgroundColor: 'rgba({colors.black}, 0.4)',
+      backgroundColor: 'rgba({color.black}, 0.4)',
     },
     a: {
       lineHeight: '0'
@@ -58,10 +58,10 @@ css({
       display: 'flex',
       alignItems: 'center',
       gap: '{space.2}',
-      fontSize: '{fontSizes.sm}',
-      fontWeight: '{fontWeights.black}',
-      '@mq.xl': {
-        fontSize: '{fontSizes.xl}',
+      fontSize: '{fontSize.sm}',
+      fontWeight: '{fontWeight.black}',
+      '@xl': {
+        fontSize: '{fontSize.xl}',
       },
       '.icon': {
         width: '{size.32}'
@@ -69,7 +69,7 @@ css({
       span: {
         display: 'none'
       },
-      '@mq.xs': {
+      '@xs': {
         span: {
           display: 'inline',
         }
@@ -86,7 +86,7 @@ css({
         height: '{size.16}',
         width: '{size.16}'
       },
-      '@mq.xl': {
+      '@xl': {
         ':deep(.icon)': {
           height: '{size.24}',
           width: '{size.24}'

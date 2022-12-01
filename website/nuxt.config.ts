@@ -1,4 +1,4 @@
-import { createResolver } from "@nuxt/kit"
+import { createResolver } from '@nuxt/kit'
 
 const { resolve } = createResolver(import.meta.url)
 
@@ -10,25 +10,22 @@ export default defineNuxtConfig({
         {
           key: 'meta',
           name: 'viewport',
-          content: 'width=device-width, initial-scale=1, maximum-scale=1'
-        }
+          content: 'width=device-width, initial-scale=1, maximum-scale=1',
+        },
       ],
-      link: [
-        { rel: 'stylesheet', href: 'https://rsms.me/inter/inter.css' }
-      ]
-    }
+    },
   },
 
   modules: ['../src/module', 'nuxt-icon', '@nuxt/content', '@vueuse/motion/nuxt'],
 
   css: [
-    resolve('../node_modules/@nuxt-themes/typography/main.css')
+    resolve('../node_modules/@nuxt-themes/typography/main.css'),
   ],
 
   components: [
     {
       path: resolve('./components'),
-      global: true
+      global: true,
     },
     {
       path: resolve('../node_modules/@nuxt-themes/typography/components'),
@@ -37,14 +34,14 @@ export default defineNuxtConfig({
     {
       path: resolve('../node_modules/@nuxt-themes/typography/components/global'),
       global: true,
-    }
+    },
   ],
 
   content: {
     highlight: {
       theme: {
         dark: 'github-dark',
-        default: 'github-light'
+        default: 'github-light',
       },
       preload: ['json', 'js', 'ts', 'html', 'css', 'vue', 'diff', 'shell', 'markdown', 'yaml', 'bash', 'ini'],
     },

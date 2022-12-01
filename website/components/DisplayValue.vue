@@ -175,28 +175,28 @@ css({
     cursor: 'copy'
   },
   ':deep(.leads)': {
-    backgroundColor: '{colors.green.500}',
+    backgroundColor: '{color.green.500}',
     borderRadius: '{radii.sm}'
   },
   'h3': {
     fontStyle: 'capitalize',
     textTransform: 'capitalize',
-    fontFamily: '{fonts.base}',
+    fontFamily: '{font.sans}',
     fontWeight: 'bold',
     marginTop: '{space.2}',
-    fontSize: '{fontSizes.3xl}'
+    fontSize: '{fontSize.3xl}'
   },
   '.box': {
     position: 'relative',
     height: '256px',
     width: '256px',
     borderRadius: '{radii.xl}',
-    backgroundColor: '{colors.black}',
+    backgroundColor: '{color.black}',
     '@dark': {
-      backgroundColor: '{colors.white}'
+      backgroundColor: '{color.white}'
     },
     '&.color': {
-      border: '2px solid {colors.white}',
+      border: '2px solid {color.white}',
       span: {
         position: 'absolute',
         bottom: '{space.2}',
@@ -205,13 +205,13 @@ css({
       }
     },
     '&.shadow': {
-      border: '2px solid {colors.white}',
+      border: '2px solid {color.white}',
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
       width: '256px',
       height: '256px',
-      backgroundColor: '{colors.white}',
+      backgroundColor: '{color.white}',
       '@dark': {
         backgroundColor: 'white'
       },
@@ -225,39 +225,39 @@ css({
         width: '128px',
         height: '128px',
         borderRadius: '{radii.xl}',
-        backgroundColor: '{colors.white}',
+        backgroundColor: '{color.white}',
       },
     },
     '&.size': {
-      backgroundColor: '{colors.black}',
+      backgroundColor: '{color.black}',
       '@dark': {
-        backgroundColor: '{colors.white}'
+        backgroundColor: '{color.white}'
       },
      },
     '&.radii': {
-      border: '8px solid {colors.indigoblue.500}',
+      border: '8px solid {color.indigoblue.500}',
     },
     '&.space': {
       position: 'relative',
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
-      backgroundColor: '{colors.black}',
+      backgroundColor: '{color.black}',
       "@dark": {
-        backgroundColor: '{colors.white}',
+        backgroundColor: '{color.white}',
       },
       '& > div': {
-        backgroundColor: '{colors.white}',
+        backgroundColor: '{color.white}',
         borderRadius: '{radii.lg}',
         width: '100%',
         height: '100%',
         "@dark": {
-          backgroundColor: '{colors.black}',
+          backgroundColor: '{color.black}',
         }
       }
     },
     '&.borderWidths': {
-      borderColor: '{colors.indigoblue.500}',
+      borderColor: '{color.indigoblue.500}',
       borderStyle: 'solid'
     },
     '&.opacity': {
@@ -265,25 +265,25 @@ css({
       alignItems: 'center',
       justifyContent: 'center',
       "@dark": {
-        backgroundColor: '{colors.white}',
+        backgroundColor: '{color.white}',
       },
       '& > div': {
-        backgroundColor: '{colors.white}',
+        backgroundColor: '{color.white}',
         borderRadius: '{radii.lg}',
         width: '50%',
         height: '50%',
         "@dark": {
-          backgroundColor: '{colors.black}',
+          backgroundColor: '{color.black}',
         }
       }
     }
   },
   '.paragraph': {
-    fontSize: '{fontSizes.xl}'
+    fontSize: '{fontSize.xl}'
   },
   'span': {
     '& > span': {
-      fontWeight: '{fontWeights.bold}'
+      fontWeight: '{fontWeight.bold}'
     }
   },
 })

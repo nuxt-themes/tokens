@@ -71,12 +71,12 @@ css({
     alignItems: 'center',
     justifyContent: 'center',
     overflow: 'hidden',
-    border: '1px solid {colors.green.500}',
-    backgroundColor: 'rgba({colors.green.200}, 0.4)',
+    border: '1px solid {color.green.500}',
+    backgroundColor: 'rgba({color.green.200}, 0.4)',
     padding: '{space.1} {space.2}',
     borderRadius: '{radii.lg}',
-    fontWeight: '{fontWeights.bold}',
-    color: '{colors.white}',
+    fontWeight: '{fontWeight.bold}',
+    color: '{color.white}',
   }
 })
 </style>

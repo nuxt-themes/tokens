@@ -32,7 +32,7 @@ css({
         height: '{size.16}',
         width: '{size.16}'
       },
-      '@mq.xl': {
+      '@xl': {
         'svg, a > svg': {
           height: '{size.32}',
           width: '{size.32}'
