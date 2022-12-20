@@ -183,6 +183,14 @@
         "value": "{lead.7}"
       }
     },
+    "xl": {
+      "fontSize": {
+        "value": "{fontSize.xl}"
+      },
+      "lineHeight": {
+        "value": "{lead.7}"
+      }
+    },
     "2xl": {
       "fontSize": {
         "value": "{fontSize.2xl}"
