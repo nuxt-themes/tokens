@@ -29,7 +29,7 @@ const props = defineProps({
     required: false,
     default: () => ([]),
   },
-  ...variants
+  ...variants,
 })
 
 const emit = defineEmits(['update:hoveredToken', 'update:clipboardState'])
@@ -68,12 +68,6 @@ css({
     fontFamily: '{font.sans}',
     fontWeight: 'bold',
     marginTop: '{space.8}'
-  },
-  'h2': {
-    fontSize: '{fontSize.6xl}',
-  },
-  'h3': {
-    fontSize: '{fontSize.2xl}',
   },
   variants: {
     flatten: {
