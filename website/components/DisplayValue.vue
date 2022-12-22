@@ -44,7 +44,7 @@ const copyValue = computed(() => {
   if (props.type === 'token' && props.token?.path) {
     return `{${props.token.path.join('.')}}`
   }
-  return props.token?.attributes?.variable || props.token?.value || props.token?.original?.value || ''
+  return props.token?.variable || props.token?.value || ''
 })
 
 const { copy: _copy } = useClipboard({ source: copyValue })
@@ -164,7 +164,7 @@ const isText = computed(() => props.nestings.includes('text'))
         <PlaceholderText single class="leads" :style="{ lineHeight: tokenValue }" />
         <span>{{ tokenValue }}</span>
       </template>
-      <p>{{ token.attributes.variable }}</p>
+      <p>{{ token.variable }}</p>
     </span>
   </div>
 </template>
