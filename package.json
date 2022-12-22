@@ -30,7 +30,7 @@
   "dependencies": {
     "@nuxtjs/color-mode": "^3.2.0",
     "@vueuse/core": "^9.8.2",
-    "pinceau": "^0.9.4"
+    "pinceau": "^0.9.8"
   },
   "devDependencies": {
     "style-value-types": "^5.1.2",

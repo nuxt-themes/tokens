@@ -11,7 +11,7 @@ specifiers:
   eslint: ^8.30.0
   nuxt: ^3.0.0
   nuxt-icon: ^0.1.8
-  pinceau: ^0.9.4
+  pinceau: ^0.9.8
   release-it: ^15.5.1
   style-value-types: ^5.1.2
   typescript: ^4.9.4
@@ -19,7 +19,7 @@ specifiers:
 dependencies:
   '@nuxtjs/color-mode': 3.2.0
   '@vueuse/core': 9.8.2
-  pinceau: 0.9.4
+  pinceau: 0.9.8
 
 devDependencies:
   '@antfu/eslint-config': 0.34.0_lzzuuodtsqwxnvqeq4g4likcqa
@@ -154,7 +154,7 @@ packages:
       '@babel/helpers': 7.20.7
       '@babel/parser': 7.20.7
       '@babel/template': 7.20.7
-      '@babel/traverse': 7.20.7
+      '@babel/traverse': 7.20.8
       '@babel/types': 7.20.7
       convert-source-map: 1.9.0
       debug: 4.3.4
@@ -250,7 +250,7 @@ packages:
       '@babel/helper-split-export-declaration': 7.18.6
       '@babel/helper-validator-identifier': 7.19.1
       '@babel/template': 7.20.7
-      '@babel/traverse': 7.20.7
+      '@babel/traverse': 7.20.8
       '@babel/types': 7.20.7
     transitivePeerDependencies:
       - supports-color
@@ -275,7 +275,7 @@ packages:
       '@babel/helper-member-expression-to-functions': 7.20.7
       '@babel/helper-optimise-call-expression': 7.18.6
       '@babel/template': 7.20.7
-      '@babel/traverse': 7.20.7
+      '@babel/traverse': 7.20.8
       '@babel/types': 7.20.7
     transitivePeerDependencies:
       - supports-color
@@ -310,7 +310,7 @@ packages:
     engines: {node: '>=6.9.0'}
     dependencies:
       '@babel/template': 7.20.7
-      '@babel/traverse': 7.20.7
+      '@babel/traverse': 7.20.8
       '@babel/types': 7.20.7
     transitivePeerDependencies:
       - supports-color
@@ -364,8 +364,8 @@ packages:
       - supports-color
     dev: true
 
-  /@babel/standalone/7.20.7:
-    resolution: {integrity: sha512-78PPF/PnFq2f5k3wW3tvRc6fs5Qik4RFjzPDcolCS2w7lwpCoIVhXQ/mssZRHL5FfHRVy7MVR3eXf50E3OAUSA==}
+  /@babel/standalone/7.20.8:
+    resolution: {integrity: sha512-8E4vjkIuUzFj4oUPNnRL7YORowosjGEOZ/OqA5kx/ZlkS6xpWvJMezmK6jwTK5u0cbwxw8OYOa9X25em2pc6UA==}
     engines: {node: '>=6.9.0'}
 
   /@babel/template/7.20.7:
@@ -376,8 +376,8 @@ packages:
       '@babel/parser': 7.20.7
       '@babel/types': 7.20.7
 
-  /@babel/traverse/7.20.7:
-    resolution: {integrity: sha512-xueOL5+ZKX2dJbg8z8o4f4uTRTqGDRjilva9D1hiRlayJbTY8jBRL+Ph67IeRTIE439/VifHk+Z4g0SwRtQE0A==}
+  /@babel/traverse/7.20.8:
+    resolution: {integrity: sha512-/RNkaYDeCy4MjyV70+QkSHhxbvj2JO/5Ft2Pa880qJOG8tWrqcT/wXUuCCv43yogfqPzHL77Xu101KQPf4clnQ==}
     engines: {node: '>=6.9.0'}
     dependencies:
       '@babel/code-frame': 7.18.6
@@ -575,12 +575,12 @@ packages:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.14.0
 
-  /@nuxt-themes/tokens/1.3.1:
-    resolution: {integrity: sha512-cKEIBZj04nGb+x2bGhs5svGTYWm5EnwOAuK0SG7Q6v5Pm5PoUN88ztR91lXbpr147Q9EmcQMpw3kXIszog+l8g==}
+  /@nuxt-themes/tokens/1.4.0:
+    resolution: {integrity: sha512-I+/7ZtYZzOd4iyTiQs0ocvj/hYfqVt/6E+X0QxSC5o4J+am5vXBXlR9njcH7ML90sCMwtg0E9ROFWsAu29CoUg==}
     dependencies:
       '@nuxtjs/color-mode': 3.2.0
       '@vueuse/core': 9.8.2
-      pinceau: 0.9.4
+      pinceau: 0.9.8
     transitivePeerDependencies:
       - '@vue/composition-api'
       - postcss
@@ -593,7 +593,7 @@ packages:
   /@nuxt-themes/typography/0.2.0:
     resolution: {integrity: sha512-4k7hcnXROvavEzNBR5G7MFdSZcQIf8fbK7HtX1CGMkXdK4JC/ZPAMiM07D4dbMdfV3SQ6RFpH+AFgqleF4po9g==}
     dependencies:
-      '@nuxt-themes/tokens': 1.3.1
+      '@nuxt-themes/tokens': 1.4.0
       '@nuxtjs/color-mode': 3.2.0
       nuxt-config-schema: 0.3.7
       nuxt-icon: 0.1.8
@@ -837,7 +837,7 @@ packages:
       unplugin: 1.0.1
       vite: 3.2.5
       vite-node: 0.25.8
-      vite-plugin-checker: 0.5.2_tgls4jshbpzaqa54buzfmlvizy
+      vite-plugin-checker: 0.5.3_tgls4jshbpzaqa54buzfmlvizy
       vue: 3.2.45
       vue-bundle-renderer: 1.0.0
     transitivePeerDependencies:
@@ -1563,7 +1563,7 @@ packages:
       '@babel/helper-module-imports': 7.18.6
       '@babel/plugin-syntax-jsx': 7.18.6_@babel+core@7.20.7
       '@babel/template': 7.20.7
-      '@babel/traverse': 7.20.7
+      '@babel/traverse': 7.20.8
       '@babel/types': 7.20.7
       '@vue/babel-helper-vue-transform-on': 1.0.2
       camelcase: 6.3.0
@@ -6411,8 +6411,8 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /pinceau/0.9.4:
-    resolution: {integrity: sha512-nnfIslOktM+GP+NivqV9aHW03HGW5ZNqQXuUFiAdisYh0t8jTFZhrwZmk/832JcwjRkAbv4jPhWWQgPxxywKoQ==}
+  /pinceau/0.9.8:
+    resolution: {integrity: sha512-dJ2cv0Nz9vzw0jCUPTe/Yv2BqvtrPvA/9a6orThn6m4ak+H6cwxbLdbahg0yEYL9NOMa7dzyluBdezQv4cIGrQ==}
     dependencies:
       '@unocss/reset': 0.48.0
       '@volar/vue-language-core': 1.0.16
@@ -8362,7 +8362,7 @@ packages:
     resolution: {integrity: sha512-nG0A55YEhUU5UCEM+nhIhCVkA8a4L1spIVtzO0937WDjEA6jrKpu184O2K9iv5UuJNHnwhu+Q3TXiSJh/JrjlQ==}
     dependencies:
       '@babel/core': 7.20.7
-      '@babel/standalone': 7.20.7
+      '@babel/standalone': 7.20.8
       '@babel/types': 7.20.7
       scule: 1.0.0
     transitivePeerDependencies:
@@ -8493,8 +8493,8 @@ packages:
       - terser
     dev: true
 
-  /vite-plugin-checker/0.5.2_tgls4jshbpzaqa54buzfmlvizy:
-    resolution: {integrity: sha512-RtpoXS1+A31HcXcNiuHyVDU3SlH1tU/ufOZEBlBrKclNsE+P9BdVsXiO5AWpczZCM6G2k/7GeH/BRi9lDvvakQ==}
+  /vite-plugin-checker/0.5.3_tgls4jshbpzaqa54buzfmlvizy:
+    resolution: {integrity: sha512-upPESKsQTypC2S7LPjxu9HknOymNSToAAHTYSFHb0at5GKLcN1QGMAR5Hb+7KqZclGMVniXAj7QdhZv+fTx83Q==}
     engines: {node: '>=14.16'}
     peerDependencies:
       eslint: '>=7'
