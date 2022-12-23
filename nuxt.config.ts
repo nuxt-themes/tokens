@@ -1,17 +1,17 @@
+// That allows to overwrite these dependencies paths via `.env` for local development
+const envModules = {
+  colorMode: process?.env?.THEME_DEV_COLOR_MODE_PATH || '@nuxtjs/color-mode',
+  tokens: process?.env?.THEME_DEV_PINCEAU_PATH || 'pinceau/nuxt',
+}
+
 export default defineNuxtConfig({
   modules: [
-    '@nuxtjs/color-mode',
-    'pinceau/nuxt',
+    envModules.colorMode,
+    envModules.tokens,
   ],
   pinceau: {
     configFileName: 'tokens.config',
     colorSchemeMode: 'class',
-  },
-  hooks: {
-    // @ts-ignore
-    'pinceau:options': (options) => {
-      return options
-    },
   },
   colorMode: {
     classSuffix: '',
