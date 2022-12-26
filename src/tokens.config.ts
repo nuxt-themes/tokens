@@ -36,6 +36,11 @@ const utils = {
       paddingRight: value,
     }
   },
+  truncate: {
+    overflow: 'hidden',
+    textOverflow: 'ellipsis',
+    whiteSpace: 'nowrap',
+  },
 }
 
 export default defineTheme({
@@ -54,5 +59,5 @@ export default defineTheme({
     'rm': { value: '(prefers-reduced-motion: reduce)' },
     'landscape': { value: 'only screen and (orientation: landscape)' },
     'portrait': { value: 'only screen and (orientation: portrait)' },
-  }
+  },
 })
