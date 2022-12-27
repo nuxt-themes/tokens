@@ -2,28 +2,28 @@ lockfileVersion: 5.4
 
 specifiers:
   '@antfu/eslint-config': ^0.34.0
-  '@nuxt-themes/typography': ^0.2.1
+  '@nuxt-themes/typography': ^0.2.2
   '@nuxt/content': ^2.3.0
   '@nuxt/module-builder': latest
   '@nuxtjs/color-mode': ^3.2.0
-  '@vueuse/core': ^9.8.2
+  '@vueuse/core': ^9.9.0
   '@vueuse/motion': 2.0.0-beta.25
   eslint: ^8.30.0
   nuxt: ^3.0.0
   nuxt-icon: ^0.1.8
-  pinceau: ^0.9.10
+  pinceau: ^0.9.14
   release-it: ^15.5.1
   style-value-types: ^5.1.2
   typescript: ^4.9.4
 
 dependencies:
   '@nuxtjs/color-mode': 3.2.0
-  '@vueuse/core': 9.8.2
-  pinceau: 0.9.10
+  '@vueuse/core': 9.9.0
+  pinceau: 0.9.14
 
 devDependencies:
   '@antfu/eslint-config': 0.34.0_lzzuuodtsqwxnvqeq4g4likcqa
-  '@nuxt-themes/typography': 0.2.1
+  '@nuxt-themes/typography': 0.2.2
   '@nuxt/content': 2.3.0
   '@nuxt/module-builder': 0.2.1
   '@vueuse/motion': 2.0.0-beta.25
@@ -575,12 +575,12 @@ packages:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.14.0
 
-  /@nuxt-themes/tokens/1.4.1:
-    resolution: {integrity: sha512-5LuMcg5yx+j+063Ske4PNxaQyqYErpCjpTUdkacNJUmGkt7Yaakimowu0x6TLa+92IzrqXwodAOg6VLoOpZfMw==}
+  /@nuxt-themes/tokens/1.4.3:
+    resolution: {integrity: sha512-MckKTa9tWkwfqTH2j/YuJuDqwra7HGQcKWhn/72fLmZHtsZig4UvMweHI3O3Y3Q529rGrOJEgk7+AIaS8XFVfg==}
     dependencies:
       '@nuxtjs/color-mode': 3.2.0
-      '@vueuse/core': 9.8.2
-      pinceau: 0.9.10
+      '@vueuse/core': 9.9.0
+      pinceau: 0.9.14
     transitivePeerDependencies:
       - '@vue/composition-api'
       - postcss
@@ -590,10 +590,10 @@ packages:
       - vue
     dev: true
 
-  /@nuxt-themes/typography/0.2.1:
-    resolution: {integrity: sha512-VhJyFqqWtChDs4URa7JsxwBJJlvozL27XSiqOCOOVzgcUTkP2wtQkZURBxOoat4i9QUYHeBrhHenm6SY3YIC0A==}
+  /@nuxt-themes/typography/0.2.2:
+    resolution: {integrity: sha512-yynYFbnxDqlBvBDttmMW05YSKwzPigNctbE/8k5KepNgHexFvuTDim1asWW9/NsUFkECMsl9yVOW97hXq0UiWQ==}
     dependencies:
-      '@nuxt-themes/tokens': 1.4.1
+      '@nuxt-themes/tokens': 1.4.3
       '@nuxtjs/color-mode': 3.2.0
       nuxt-config-schema: 0.3.7
       nuxt-icon: 0.1.8
@@ -1529,23 +1529,23 @@ packages:
       vue: 3.2.45
     dev: true
 
-  /@volar/language-core/1.0.16:
-    resolution: {integrity: sha512-IGnOxWTs4DZ81TDcmxBAkCBxs97hUblwcjpBsTx/pOGGaSSDQRJPn0wL8NYTybEObU0i7lhEpKZ+0vJfdIy1Kg==}
+  /@volar/language-core/1.0.18:
+    resolution: {integrity: sha512-PFrqAksKhiuAqNV4fefoMilX+JutVq0Z3iM14xjLvWPv68fs2dLedwU84GiHfSPTMmRiPCJ2HhH2rz4qNY42lA==}
     dependencies:
-      '@volar/source-map': 1.0.16
+      '@volar/source-map': 1.0.18
       '@vue/reactivity': 3.2.45
       muggle-string: 0.1.0
 
-  /@volar/source-map/1.0.16:
-    resolution: {integrity: sha512-PKjzmQcg8QOGC/1V9tmGh2jcy6bKLhkW5bGidElSr83iDbCzLvldt2/La/QlDxaRCHYLT0MeyuGJBZIChB1dYQ==}
+  /@volar/source-map/1.0.18:
+    resolution: {integrity: sha512-D8AcjrT2ukG5XiZhtSQBhcvL1TTlWOebCqS//Z/hGLGQZjpZHWaKD4OyDzKDzM0U9EtOuDh9rttnabCHDPvY2Q==}
     dependencies:
       muggle-string: 0.1.0
 
-  /@volar/vue-language-core/1.0.16:
-    resolution: {integrity: sha512-sQ/aW1Vuiyy4OQuh2lthyYicruM3qh9VSk/aDh8/bFvM8GoohHZqVpMN3LYldEJ9eT/rN6u4xmYP54vc/EjX4Q==}
+  /@volar/vue-language-core/1.0.18:
+    resolution: {integrity: sha512-1yJcXYz9SdQUYoKWPbnr1SgMsBGXH29hS8W47p46P8Mm+5mmDdR/GFQw2+Zo5kAIS8vtLstlowI1Okoy7HFzIQ==}
     dependencies:
-      '@volar/language-core': 1.0.16
-      '@volar/source-map': 1.0.16
+      '@volar/language-core': 1.0.18
+      '@volar/source-map': 1.0.18
       '@vue/compiler-dom': 3.2.45
       '@vue/compiler-sfc': 3.2.45
       '@vue/reactivity': 3.2.45
@@ -1657,12 +1657,12 @@ packages:
   /@vue/shared/3.2.45:
     resolution: {integrity: sha512-Ewzq5Yhimg7pSztDV+RH1UDKBzmtqieXQlpTVm2AwraoRL/Rks96mvd8Vgi7Lj+h+TH8dv7mXD3FRZR3TUvbSg==}
 
-  /@vueuse/core/9.8.2:
-    resolution: {integrity: sha512-aWiCmcYIpPt7xjuqYiceODEMHchDYthrJ4AqI+FXPZrR23PZOqdiktbUVyQl2kGlR3H4i9UJ/uimQrwhz9UouQ==}
+  /@vueuse/core/9.9.0:
+    resolution: {integrity: sha512-JdDb7TrE0imZnwBhMF4+0PCJqGD3AxzH8S2sfk54P0rqvklK+EAtAR/mPb1HwV/JPujQFQJhghQ190Yq03YpVw==}
     dependencies:
       '@types/web-bluetooth': 0.0.16
-      '@vueuse/metadata': 9.8.2
-      '@vueuse/shared': 9.8.2
+      '@vueuse/metadata': 9.9.0
+      '@vueuse/shared': 9.9.0
       vue-demi: 0.13.11
     transitivePeerDependencies:
       - '@vue/composition-api'
@@ -1683,8 +1683,8 @@ packages:
       vue: 3.2.45
     dev: true
 
-  /@vueuse/metadata/9.8.2:
-    resolution: {integrity: sha512-N4E/BKS+9VsUeD4WLVRU1J2kCOLh+iikBcMtipFcTyL204132vDYHs27zLAVabJYGnhC0dIVGdhg9pbOZiY2TQ==}
+  /@vueuse/metadata/9.9.0:
+    resolution: {integrity: sha512-pgxsUJv/d7IjKpLeB6TthggEsaBwM3ffc5jPrr5TmxAm/fup0mGR5VTzrdA/PSx85tpb+CIvP92D+55qBNc8ag==}
 
   /@vueuse/motion/2.0.0-beta.25:
     resolution: {integrity: sha512-C0D1qpfd+YYbjoUCNEvbLbaajGI6uwrspJL3g+kbv0uBiVRM4+GWeHwjDZkOAceTYDCVAW7lYhVgZk4ZY/+2RA==}
@@ -1694,7 +1694,7 @@ packages:
       vue:
         optional: true
     dependencies:
-      '@vueuse/core': 9.8.2
+      '@vueuse/core': 9.9.0
       '@vueuse/shared': 9.8.2
       csstype: 3.1.1
       framesync: 6.1.2
@@ -1710,6 +1710,15 @@ packages:
 
   /@vueuse/shared/9.8.2:
     resolution: {integrity: sha512-ACjrPQzowd5dnabNJt9EoGVobco9/ENiA5qP53vjiuxndlJYuc/UegwhXC7KdQbPX4F45a50+45K3g1wNqOzmA==}
+    dependencies:
+      vue-demi: 0.13.11
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+      - vue
+    dev: true
+
+  /@vueuse/shared/9.9.0:
+    resolution: {integrity: sha512-+D0XFwHG0T+uaIbCSlROBwm1wzs71B7n3KyDOxnvfEMMHDOzl09rYKwaE2AENmYwYPXfHPbSBRDD2gBVHbvTcg==}
     dependencies:
       vue-demi: 0.13.11
     transitivePeerDependencies:
@@ -6411,11 +6420,11 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /pinceau/0.9.10:
-    resolution: {integrity: sha512-vG8RzUjbiTrl+PRHWnw1dLKmoC+j++/ZaqbbWOWUSThndgADxrENpa4EOV95Vh8uxOT+zOJoUWaSZi0rVIXGaA==}
+  /pinceau/0.9.14:
+    resolution: {integrity: sha512-lxT/9brU0EpSBoSVSVWJqbXNMVkTWCs5m6g33csTv7pLCcR1Lfzi+VAV3QTGY3ZNsz/Iye2n4V9Z8iBsNaZvYQ==}
     dependencies:
       '@unocss/reset': 0.48.0
-      '@volar/vue-language-core': 1.0.16
+      '@volar/vue-language-core': 1.0.18
       acorn: 8.8.1
       chroma-js: 2.4.2
       consola: 2.15.3

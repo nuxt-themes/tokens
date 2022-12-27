@@ -15,13 +15,15 @@ const module: any = defineNuxtModule({
   async setup(_, nuxt) {
     const modulePath = createResolver(import.meta.url)
 
+    // Push local tokens config in layers
     nuxt.hook(
       'pinceau:options',
       (options: PinceauOptions) => {
-        options.configOrPaths = options?.configOrPaths || []
-        if (Array.isArray(options?.configOrPaths)) {
-          options.configOrPaths.push(modulePath.resolve())
-        }
+        options.configLayers = options?.configLayers || []
+        options.configLayers.push({
+          cwd: modulePath.resolve(),
+          configFileName: 'tokens.config',
+        })
       },
     )
 
