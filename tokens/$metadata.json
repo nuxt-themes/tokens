@@ -2,15 +2,6 @@
   "tokenSetOrder": [
     "Base/colors",
     "Base/core",
-    "Base/typography",
-    "Themes/alpine/colors",
-    "Themes/alpine/typography",
-    "Themes/docus/colors",
-    "Themes/docus/customRadiuses",
-    "Themes/docus/typography",
-    "Themes/nuxt/colors",
-    "Themes/nuxt/typography",
-    "Themes/studio/colors",
-    "Themes/studio/typography"
+    "Base/typography"
   ]
 }

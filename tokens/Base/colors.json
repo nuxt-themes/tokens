@@ -1,4 +1,12 @@
 {
+  "$schema": {
+    "title": "All color palettes used in your theme.",
+    "tags": [
+      "@studio-input design-token",
+      "@studio-input-token-type color",
+      "@studio-icon ph:palette"
+    ]
+  },
   "white": {
     "value": "#ffffff"
   },

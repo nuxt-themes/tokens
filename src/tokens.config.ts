@@ -1,4 +1,5 @@
 import { defineTheme } from 'pinceau'
+import type { ConfigTokens } from 'pinceau'
 import color from '../tokens/Base/colors.json'
 import core from '../tokens/Base/core.json'
 import typography from '../tokens/Base/typography.json'
@@ -11,7 +12,7 @@ const tokens = {
 }
 
 // Global properties utils
-const utils = {
+const utils: ConfigTokens['utils'] = {
   my: (value) => {
     return {
       marginTop: value,
@@ -40,7 +41,7 @@ const utils = {
     overflow: 'hidden',
     textOverflow: 'ellipsis',
     whiteSpace: 'nowrap',
-  },
+  } as any,
 }
 
 export default defineTheme({
