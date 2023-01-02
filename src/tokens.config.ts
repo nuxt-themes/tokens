@@ -43,15 +43,15 @@ const utils: ConfigTokens['utils'] = {
     whiteSpace: 'nowrap',
   } as any,
   lineClamp: (lines: any) => ({
-    overflow: 'hidden',
-    display: '-webkit-box',
+    'overflow': 'hidden',
+    'display': '-webkit-box',
     '-webkit-box-orient': 'vertical',
-    '-webkit-line-clamp': lines
+    '-webkit-line-clamp': lines,
   }) as any,
   text: (size: any) => ({
     fontSize: `{text.${size}.fontSize}`,
-    lineHeight: `{text.${size}.lineHeight}`
-  })
+    lineHeight: `{text.${size}.lineHeight}`,
+  }),
 }
 
 export default defineTheme({
@@ -61,6 +61,14 @@ export default defineTheme({
   utils,
 
   media: {
+    '$schema': {
+      title: 'Your website media queries.',
+      tags: [
+        '@studio-input design-token',
+        '@studio-input-token-type color',
+        '@studio-icon material-symbols:screenshot-monitor-outline-rounded',
+      ],
+    },
     'xs': { value: '(min-width: 475px)' },
     'sm': { value: '(min-width: 640px)' },
     'md': { value: '(min-width: 768px)' },

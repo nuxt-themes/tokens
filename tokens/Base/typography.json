@@ -1,7 +1,7 @@
 {
   "font": {
     "$schema": {
-      "title": "All fonts used in your theme.",
+      "title": "Your website fonts",
       "tags": [
         "@studio-input design-token",
         "@studio-input-token-type font",
@@ -20,7 +20,7 @@
   },
   "fontWeight": {
     "$schema": {
-      "title": "All font weights used in your theme.",
+      "title": "Your website font weights.",
       "tags": [
         "@studio-input design-token",
         "@studio-input-token-type font-weight",
@@ -57,7 +57,7 @@
   },
   "fontSize": {
     "$schema": {
-      "title": "All font sizes used in your theme.",
+      "title": "Your website font sizes.",
       "tags": [
         "@studio-input design-token",
         "@studio-input-token-type font-size",
@@ -106,7 +106,7 @@
   },
   "letterSpacing": {
     "$schema": {
-      "title": "All letter spacings used in your theme.",
+      "title": "Your website letter spacings.",
       "tags": [
         "@studio-input design-token",
         "@studio-input-token-type letter-spacing",
@@ -134,7 +134,7 @@
   },
   "lead": {
     "$schema": {
-      "title": "All line heights used in your theme.",
+      "title": "Your website line heights.",
       "tags": [
         "@studio-input design-token",
         "@studio-input-token-type size",
@@ -192,7 +192,7 @@
   },
   "text": {
     "$schema": {
-      "title": "Different typography scales used in your theme.",
+      "title": "Your website text scales.",
       "tags": [
         "@studio-input design-token",
         "@studio-input-token-type size",

@@ -1,6 +1,6 @@
 {
   "$schema": {
-    "title": "All color palettes used in your theme.",
+    "title": "Your website color palette.",
     "tags": [
       "@studio-input design-token",
       "@studio-input-token-type color",

@@ -1,7 +1,7 @@
 {
   "width": {
     "$schema": {
-      "title": "Core screen sizings.",
+      "title": "Your website screen sizings.",
       "tags": [
         "@studio-input design-token",
         "@studio-input-token-type size",
@@ -14,7 +14,7 @@
   },
   "height": {
     "$schema": {
-      "title": "Core screen sizings.",
+      "title": "Your website screen sizings.",
       "tags": [
         "@studio-input design-token",
         "@studio-input-token-type size",
@@ -27,7 +27,7 @@
   },
   "shadow": {
     "$schema": {
-      "title": "All shadows used in your theme.",
+      "title": "Your website shadows.",
       "tags": [
         "@studio-input design-token",
         "@studio-input-token-type shadow",
@@ -58,7 +58,7 @@
   },
   "radii": {
     "$schema": {
-      "title": "All shadows used in your theme.",
+      "title": "Your website border radiuses.",
       "tags": [
         "@studio-input design-token",
         "@studio-input-token-type size",
@@ -108,7 +108,7 @@
   },
   "size": {
     "$schema": {
-      "title": "All sizes used in your theme.",
+      "title": "Your website sizings.",
       "tags": [
         "@studio-input design-token",
         "@studio-input-token-type size",
@@ -205,7 +205,7 @@
   },
   "space": {
     "$schema": {
-      "title": "All spaces used in your theme.",
+      "title": "Your website spacings.",
       "tags": [
         "@studio-input design-token",
         "@studio-input-token-type size",
@@ -322,7 +322,7 @@
   },
   "borderWidth": {
     "$schema": {
-      "title": "All border widths used in your theme.",
+      "title": "Your website border widths.",
       "tags": [
         "@studio-input design-token",
         "@studio-input-token-type size",
@@ -344,7 +344,7 @@
   },
   "opacity": {
     "$schema": {
-      "title": "All opacities used in your theme.",
+      "title": "Your website opacities.",
       "tags": [
         "@studio-input design-token",
         "@studio-input-token-type opacity",
