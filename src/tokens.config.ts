@@ -41,7 +41,17 @@ const utils: ConfigTokens['utils'] = {
     overflow: 'hidden',
     textOverflow: 'ellipsis',
     whiteSpace: 'nowrap',
-  } as any,
+  },
+  lineClamp: (lines: any) => ({
+    overflow: 'hidden',
+    display: '-webkit-box',
+    '-webkit-box-orient': 'vertical',
+    '-webkit-line-clamp': lines
+  }),
+  text: (size: any) => ({
+    fontSize: `{text.${size}.fontSize}`,
+    lineHeight: `{text.${size}.lineHeight}`
+  })
 }
 
 export default defineTheme({
