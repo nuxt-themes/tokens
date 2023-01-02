@@ -5,15 +5,7 @@
     "selectedTokenSets": {
       "Base/colors": "source",
       "Base/core": "source",
-      "Base/typography": "source",
-      "Themes/alpine/colors": "disabled",
-      "Themes/alpine/typography": "disabled",
-      "Themes/docus/colors": "disabled",
-      "Themes/docus/customRadiuses": "disabled",
-      "Themes/docus/typography": "disabled",
-      "Themes/nuxt/typography": "disabled",
-      "Themes/studio/colors": "enabled",
-      "Themes/studio/typography": "enabled"
+      "Base/typography": "source"
     },
     "$figmaStyleReferences": {
       "white": "S:76105059f1e72ed4643dd3e97d9e4c99551531ec,",

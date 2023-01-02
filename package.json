@@ -1,6 +1,6 @@
 {
   "name": "@nuxt-themes/tokens",
-  "version": "1.4.4",
+  "version": "1.5.0",
   "description": "Nuxt official Design Tokens definition.",
   "author": "NuxtLabs <hello@nuxtlabs.com>",
   "license": "MIT",
@@ -30,7 +30,7 @@
   "dependencies": {
     "@nuxtjs/color-mode": "^3.2.0",
     "@vueuse/core": "^9.9.0",
-    "pinceau": "^0.9.14"
+    "pinceau": "^0.10.3"
   },
   "devDependencies": {
     "style-value-types": "^5.1.2",
@@ -42,7 +42,7 @@
     "eslint": "^8.30.0",
     "nuxt": "^3.0.0",
     "nuxt-icon": "^0.1.8",
-    "release-it": "^15.5.1",
+    "release-it": "^15.6.0",
     "typescript": "^4.9.4"
   },
   "pnpm": {

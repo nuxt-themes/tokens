@@ -1,15 +1,39 @@
 {
   "width": {
+    "$schema": {
+      "title": "Core screen sizings.",
+      "tags": [
+        "@studio-input design-token",
+        "@studio-input-token-type size",
+        "@studio-icon ph:ruler"
+      ]
+    },
     "screen": {
       "value": "100vw"
     }
   },
   "height": {
+    "$schema": {
+      "title": "Core screen sizings.",
+      "tags": [
+        "@studio-input design-token",
+        "@studio-input-token-type size",
+        "@studio-icon ph:ruler"
+      ]
+    },
     "screen": {
       "value": "100vh"
     }
   },
   "shadow": {
+    "$schema": {
+      "title": "All shadows used in your theme.",
+      "tags": [
+        "@studio-input design-token",
+        "@studio-input-token-type shadow",
+        "@studio-icon mdi:box-shadow"
+      ]
+    },
     "xs": {
       "value": "0px 1px 2px 0px #000000"
     },
@@ -33,6 +57,14 @@
     }
   },
   "radii": {
+    "$schema": {
+      "title": "All shadows used in your theme.",
+      "tags": [
+        "@studio-input design-token",
+        "@studio-input-token-type size",
+        "@studio-icon material-symbols:rounded-corner"
+      ]
+    },
     "none": {
       "value": "0px",
       "description": "0px"
@@ -75,6 +107,14 @@
     }
   },
   "size": {
+    "$schema": {
+      "title": "All sizes used in your theme.",
+      "tags": [
+        "@studio-input design-token",
+        "@studio-input-token-type size",
+        "@studio-icon ph:ruler"
+      ]
+    },
     "0": {
       "value": "0px"
     },
@@ -164,6 +204,14 @@
     }
   },
   "space": {
+    "$schema": {
+      "title": "All spaces used in your theme.",
+      "tags": [
+        "@studio-input design-token",
+        "@studio-input-token-type size",
+        "@studio-icon ph:ruler"
+      ]
+    },
     "0": {
       "value": "0px"
     },
@@ -273,24 +321,36 @@
     }
   },
   "borderWidth": {
+    "$schema": {
+      "title": "All border widths used in your theme.",
+      "tags": [
+        "@studio-input design-token",
+        "@studio-input-token-type size",
+        "@studio-icon material-symbols:border-all-outline-rounded"
+      ]
+    },
     "noBorder": {
-      "value": "0",
-      "type": "borderWidth"
+      "value": "0"
     },
     "sm": {
-      "value": "1px",
-      "type": "borderWidth"
+      "value": "1px"
     },
     "md": {
-      "value": "2px",
-      "type": "borderWidth"
+      "value": "2px"
     },
     "lg": {
-      "value": "3px",
-      "type": "borderWidth"
+      "value": "3px"
     }
   },
   "opacity": {
+    "$schema": {
+      "title": "All opacities used in your theme.",
+      "tags": [
+        "@studio-input design-token",
+        "@studio-input-token-type opacity",
+        "@studio-icon material-symbols:opacity"
+      ]
+    },
     "noOpacity": {
       "value": "0",
       "type": "opacity"
