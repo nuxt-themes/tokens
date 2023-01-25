@@ -2,9 +2,9 @@
   "$schema": {
     "title": "Your website color palette.",
     "tags": [
-      "@studio-input design-token",
-      "@studio-input-token-type color",
-      "@studio-icon ph:palette"
+      "@studioInput design-token",
+      "@studioInputTokenType color",
+      "@studioIcon ph:palette"
     ]
   },
   "white": {

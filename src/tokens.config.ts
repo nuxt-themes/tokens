@@ -65,9 +65,9 @@ export default defineTheme({
       title: 'Your website media queries.',
 
       tags: [
-        '@studio-input design-token',
-        '@studio-input-token-type color',
-        '@studio-icon material-symbols:screenshot-monitor-outline-rounded',
+        '@studioInput design-token',
+        '@studioInputTokenType color',
+        '@studioIcon material-symbols:screenshot-monitor-outline-rounded',
       ],
     },
     'xs': { value: '(min-width: 475px)' },

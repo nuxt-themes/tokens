@@ -3,9 +3,9 @@
     "$schema": {
       "title": "Your website fonts",
       "tags": [
-        "@studio-input design-token",
-        "@studio-input-token-type font",
-        "@studio-icon material-symbols:font-download-rounded"
+        "@studioInput design-token",
+        "@studioInputTokenType font",
+        "@studioIcon material-symbols:font-download-rounded"
       ]
     },
     "sans": {
@@ -22,9 +22,9 @@
     "$schema": {
       "title": "Your website font weights.",
       "tags": [
-        "@studio-input design-token",
-        "@studio-input-token-type font-weight",
-        "@studio-icon radix-icons:font-style"
+        "@studioInput design-token",
+        "@studioInputTokenType font-weight",
+        "@studioIcon radix-icons:font-style"
       ]
     },
     "thin": {
@@ -59,9 +59,9 @@
     "$schema": {
       "title": "Your website font sizes.",
       "tags": [
-        "@studio-input design-token",
-        "@studio-input-token-type font-size",
-        "@studio-icon radix-icons:font-style"
+        "@studioInput design-token",
+        "@studioInputTokenType font-size",
+        "@studioIcon radix-icons:font-style"
       ]
     },
     "xs": {
@@ -108,9 +108,9 @@
     "$schema": {
       "title": "Your website letter spacings.",
       "tags": [
-        "@studio-input design-token",
-        "@studio-input-token-type letter-spacing",
-        "@studio-icon fluent:font-space-tracking-out-24-filled"
+        "@studioInput design-token",
+        "@studioInputTokenType letter-spacing",
+        "@studioIcon fluent:font-space-tracking-out-24-filled"
       ]
     },
     "tighter": {
@@ -136,9 +136,9 @@
     "$schema": {
       "title": "Your website line heights.",
       "tags": [
-        "@studio-input design-token",
-        "@studio-input-token-type size",
-        "@studio-icon icon-park-outline:auto-line-height"
+        "@studioInput design-token",
+        "@studioInputTokenType size",
+        "@studioIcon icon-park-outline:auto-line-height"
       ]
     },
     "1": {
@@ -194,9 +194,9 @@
     "$schema": {
       "title": "Your website text scales.",
       "tags": [
-        "@studio-input design-token",
-        "@studio-input-token-type size",
-        "@studio-icon material-symbols:format-size-rounded"
+        "@studioInput design-token",
+        "@studioInputTokenType size",
+        "@studioIcon material-symbols:format-size-rounded"
       ]
     },
     "xs": {
