@@ -22,7 +22,7 @@ const hoveredToken = ref()
       <ContentDoc />
     </section>
 
-    <TokensSection v-for="[key, tokens] in categories" :key="key" v-model:hoveredToken="hoveredToken" v-model:clipboardState="cpState" :type="cpType" :name="key" :tokens="tokens" />
+    <TokensSection v-for="[key, tokens] in categories" :key="key" v-model:hoveredToken="hoveredToken" v-model:clipboardState="cpState" :type="cpType" :name="key" :tokens="tokens" root />
   </div>
 </template>
 

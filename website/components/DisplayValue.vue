@@ -41,10 +41,10 @@ const clipboardState = useVModel(props, 'clipboardState', emit)
 const tokenValue = computed(() => props?.token?.value || props.token?.original?.value)
 
 const copyValue = computed(() => {
-  if (props.type === 'token' && props.token?.path) {
-    return `{${props.token.path.join('.')}}`
+  if (props.token?.variable) {
+    return `{${props.token.variable.replace('var(--', '').replace(')', '').split('-').join('.')}}`
   }
-  return props.token?.variable || props.token?.value || ''
+  return props.token?.value || ''
 })
 
 const { copy: _copy } = useClipboard({ source: copyValue })
@@ -69,7 +69,7 @@ const isScreen = computed(() => props.nestings.includes('media'))
 
 const isColor = computed(() => vt.color.test(tokenValue.value))
 
-const isFont = computed(() => props.token.type === 'fontFamilies')
+const isFont = computed(() => props.token.type === 'font')
 
 const isRadii = computed(() => props.nestings.includes('radii'))
 
@@ -77,19 +77,19 @@ const isSize = computed(() => props.nestings.includes('size'))
 
 const isSpace = computed(() => props.nestings.includes('space'))
 
-const isShadow = computed(() => props.nestings.includes('shadows'))
+const isShadow = computed(() => props.nestings.includes('shadow'))
 
-const isBorderWidth = computed(() => props.nestings.includes('borderWidths'))
+const isBorderWidth = computed(() => props.nestings.includes('borderWidth'))
 
 const isOpacity = computed(() => props.nestings.includes('opacity'))
 
-const isFontWeights = computed(() => props.nestings.includes('fontWeights'))
+const isFontWeights = computed(() => props.nestings.includes('fontWeight'))
 
-const isFontSizes = computed(() => props.nestings.includes('fontSizes'))
+const isFontSizes = computed(() => props.nestings.includes('fontSize'))
 
-const isLetterSpacings = computed(() => props.nestings.includes('letterSpacings'))
+const isLetterSpacings = computed(() => props.nestings.includes('letterSpacing'))
 
-const isLeads = computed(() => props.nestings.includes('leads'))
+const isLeads = computed(() => props.nestings.includes('lead'))
 
 const isText = computed(() => props.nestings.includes('text'))
 </script>
@@ -104,17 +104,17 @@ const isText = computed(() => props.nestings.includes('text'))
         <div class="box" :style="{ width: tokenValue, height: tokenValue }" />
         <span>{{ tokenValue }}</span>
       </template>
-      <template v-if="isColor">
+      <template v-else-if="isColor">
         <div class="box color" :style="{ backgroundColor: tokenValue }" />
         <span>{{ tokenValue }}</span>
       </template>
-      <template v-if="isFont">
+      <template v-else-if="isFont">
         <div class="paragraph" :style="{ fontFamily: tokenValue }">
           <PlaceholderText />
         </div>
         <span>{{ tokenValue }}</span>
       </template>
-      <template v-if="isShadow">
+      <template v-else-if="isShadow">
         <div class="box shadow">
           <div class="shadowed" :style="{ boxShadow: tokenValue }">
         &nbsp;
@@ -122,25 +122,25 @@ const isText = computed(() => props.nestings.includes('text'))
         </div>
         <span>{{ tokenValue }}</span>
       </template>
-      <template v-if="isRadii">
+      <template v-else-if="isRadii">
         <div class="box radii" :style="{ borderRadius: tokenValue }" />
         <span>{{ tokenValue }}</span>
       </template>
-      <template v-if="isSize">
+      <template v-else-if="isSize">
         <div class="box size" :style="{ width: tokenValue, height: tokenValue }" />
         <span>{{ tokenValue }}</span>
       </template>
-      <template v-if="isSpace">
+      <template v-else-if="isSpace">
         <div class="box space" :style="{ width: '500px', height: '500px', padding: tokenValue }">
           <div />
         </div>
         <span>{{ tokenValue }}</span>
       </template>
-      <template v-if="isBorderWidth">
+      <template v-else-if="isBorderWidth">
         <div class="box borderWidths" :style="{ borderWidth: `${tokenValue}` }" />
         <span>{{ tokenValue }}</span>
       </template>
-      <template v-if="isOpacity">
+      <template v-else-if="isOpacity">
         <div class="box opacity">
           <div :style="{ opacity: tokenValue }">
         &nbsp;
@@ -148,20 +148,23 @@ const isText = computed(() => props.nestings.includes('text'))
         </div>
         <span>{{ tokenValue }}</span>
       </template>
-      <template v-if="isFontWeights">
+      <template v-else-if="isFontWeights">
         <PlaceholderText single :style="{ fontWeight: tokenValue }" />
         <span>{{ tokenValue }}</span>
       </template>
-      <template v-if="isFontSizes">
+      <template v-else-if="isFontSizes">
         <PlaceholderText single :style="{ fontSize: tokenValue }" />
         <span>{{ tokenValue }}</span>
       </template>
-      <template v-if="isLetterSpacings">
+      <template v-else-if="isLetterSpacings">
         <PlaceholderText single :style="{ letterSpacing: tokenValue }" />
         <span>{{ tokenValue }}</span>
       </template>
-      <template v-if="isLeads">
+      <template v-else-if="isLeads">
         <PlaceholderText single class="leads" :style="{ lineHeight: tokenValue }" />
+        <span>{{ tokenValue }}</span>
+      </template>
+      <template v-else>
         <span>{{ tokenValue }}</span>
       </template>
       <p>{{ token.variable }}</p>
@@ -188,8 +191,8 @@ css({
   },
   '.box': {
     position: 'relative',
-    height: '256px',
-    width: '256px',
+    height: '32px',
+    width: '32px',
     borderRadius: '{radii.xl}',
     backgroundColor: '{color.black}',
     '@dark': {
@@ -222,8 +225,8 @@ css({
         opacity: '50%'
       },
       '& > .shadowed': {
-        width: '128px',
-        height: '128px',
+        width: '64px',
+        height: '64px',
         borderRadius: '{radii.xl}',
         backgroundColor: '{color.white}',
       },

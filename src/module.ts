@@ -17,6 +17,7 @@ const module: any = defineNuxtModule({
 
     // Push local tokens config in layers
     nuxt.hook(
+      // @ts-expect-error - ?
       'pinceau:options',
       (options: PinceauOptions) => {
         options.configLayers = options?.configLayers || []

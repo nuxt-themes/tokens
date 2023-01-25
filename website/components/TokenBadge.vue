@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import type { PropType } from 'vue'
-import type { DesignToken } from 'pinceau'
 import { useMotion } from '@vueuse/motion'
 
 const props = defineProps({
@@ -19,10 +17,18 @@ const props = defineProps({
 })
 
 const displayValue = computed(() => {
-  if (!props.token) { return '' }
+  if (!props.token) {
+    return ''
+  }
 
   if (props.type === 'token' && props.token?.path) {
     return `{${props.token.path.join('.')}}`
+  }
+
+  const variable = props.token?.variable
+
+  if (variable) {
+    return `{${variable.replace('var(--', '').replace(')', '').split('-').join('.')}}`
   }
 
   return props.token?.attributes?.variable || props.token?.value || props.token?.original?.value || ''
@@ -76,7 +82,10 @@ css({
     padding: '{space.1} {space.2}',
     borderRadius: '{radii.lg}',
     fontWeight: '{fontWeight.bold}',
-    color: '{color.white}',
+    color: '{color.black}',
+    '@dark': {
+      color: '{color.white}'
+    }
   }
 })
 </style>

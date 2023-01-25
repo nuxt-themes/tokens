@@ -37,7 +37,8 @@ defineProps({
 <style scoped lang="ts">
 css({
   'p': {
-    margin: '{space.2} 0'
+    margin: '{space.2} 0',
+    truncate: true
   }
 })
 </style>
