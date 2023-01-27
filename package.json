@@ -30,18 +30,18 @@
   "dependencies": {
     "@nuxtjs/color-mode": "^3.2.0",
     "@vueuse/core": "^9.11.1",
-    "pinceau": "^0.12.3"
+    "pinceau": "^0.12.7"
   },
   "devDependencies": {
     "style-value-types": "^5.1.2",
     "@antfu/eslint-config": "^0.34.1",
-    "@nuxt-themes/typography": "^0.4.3",
-    "@nuxt/content": "^2.3.0",
+    "@nuxt-themes/typography": "^0.6.0",
+    "@nuxt/content": "^2.4.1",
     "@nuxt/module-builder": "latest",
     "@vueuse/motion": "2.0.0-beta.25",
     "eslint": "^8.32.0",
-    "nuxt": "^3.1.0",
-    "nuxt-icon": "^0.2.7",
+    "nuxt": "^3.1.1",
+    "nuxt-icon": "^0.2.10",
     "release-it": "^15.6.0",
     "typescript": "^4.9.4"
   },
