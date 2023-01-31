@@ -179,7 +179,7 @@ css({
   },
   ':deep(.leads)': {
     backgroundColor: '{color.green.500}',
-    borderRadius: '{radii.sm}'
+    borderRadius: '{radii.sm}  '
   },
   'h3': {
     fontStyle: 'capitalize',
