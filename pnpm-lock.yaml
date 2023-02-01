@@ -3,7 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@antfu/eslint-config': ^0.35.1
   '@nuxt-themes/typography': ^0.6.0
-  '@nuxt/content': ^2.4.2
+  '@nuxt/content': ^2.4.3
   '@nuxt/module-builder': latest
   '@nuxtjs/color-mode': ^3.2.0
   '@vueuse/core': ^9.12.0
@@ -11,7 +11,7 @@ specifiers:
   eslint: ^8.33.0
   nuxt: ^3.1.1
   nuxt-icon: ^0.2.10
-  pinceau: ^0.13.1
+  pinceau: ^0.13.3
   release-it: ^15.6.0
   style-value-types: ^5.1.2
   typescript: ^4.9.5
@@ -19,12 +19,12 @@ specifiers:
 dependencies:
   '@nuxtjs/color-mode': 3.2.0
   '@vueuse/core': 9.12.0
-  pinceau: 0.13.1
+  pinceau: 0.13.3
 
 devDependencies:
   '@antfu/eslint-config': 0.35.1_4vsywjlpuriuw3tl5oq6zy5a64
   '@nuxt-themes/typography': 0.6.0
-  '@nuxt/content': 2.4.2
+  '@nuxt/content': 2.4.3
   '@nuxt/module-builder': 0.2.1
   '@vueuse/motion': 2.0.0-beta.25
   eslint: 8.33.0
@@ -1002,15 +1002,14 @@ packages:
       - vue
     dev: true
 
-  /@nuxt/content/2.4.2:
-    resolution: {integrity: sha512-Nz2ZcC7R505UY5NQN+WE1pZ4ie8PBBr12qJHFAZqhWCXenzsdb87p48fvr6Zhlj8CyCTQqWg0B2fs7Lyg/CKwg==}
+  /@nuxt/content/2.4.3:
+    resolution: {integrity: sha512-HRx4+9RK2bgtBObcgfrWg/MS0G+mgq87tAA6Q6vjusDpVGE4DhnPN/9nkEMEyfebPZ22iI7z51GN2Od/SnABHA==}
     dependencies:
       '@nuxt/kit': 3.1.1
       consola: 2.15.3
       defu: 6.1.2
       destr: 1.2.2
       detab: 3.0.2
-      html-tags: 3.2.0
       json5: 2.2.3
       knitwork: 1.0.0
       listhen: 1.0.2
@@ -6777,8 +6776,8 @@ packages:
       - supports-color
     dev: true
 
-  /pinceau/0.13.1:
-    resolution: {integrity: sha512-CCeVdTZMq86/6KlirwSm8LDBFTH+CLh5e+JhZIEccNAozsb3lARgA+QfFDq2nfkiL+tJgu3n/Ntm58DQmrBKXA==}
+  /pinceau/0.13.3:
+    resolution: {integrity: sha512-/57MQuIIndlHukL7FzyOsNvw1+XRXxPEUe1EOiELK9d4hUINbiZt67IjamZ+d7uOls5301E8yBX5v67Pd178QQ==}
     dependencies:
       '@unocss/reset': 0.49.1
       '@volar/vue-language-core': 1.0.24

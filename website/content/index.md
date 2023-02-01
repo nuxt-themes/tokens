@@ -12,4 +12,4 @@ defineNuxtConfig({
 })
 ```
 
-This design system is built on top of [🖌 **Pinceau**](https://github.com/Tahul/pinceau).
+This design system is built on top of [**Pinceau**](https://github.com/Tahul/pinceau).
