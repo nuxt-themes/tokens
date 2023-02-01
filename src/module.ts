@@ -1,5 +1,4 @@
 import { createResolver, defineNuxtModule, installModule } from '@nuxt/kit'
-import type { PinceauOptions } from 'pinceau'
 
 // That allows to overwrite these dependencies paths via `.env` for local development
 const envModules = {
@@ -17,9 +16,8 @@ const module: any = defineNuxtModule({
 
     // Push local tokens config in layers
     nuxt.hook(
-      // @ts-expect-error - ?
       'pinceau:options',
-      (options: PinceauOptions) => {
+      (options) => {
         options.configLayers = options?.configLayers || []
         options.configLayers.push({
           cwd: modulePath.resolve(),
@@ -33,13 +31,12 @@ const module: any = defineNuxtModule({
       const tsConfig: typeof opts.tsConfig & { vueCompilerOptions?: any } = opts.tsConfig
       tsConfig.compilerOptions = tsConfig.compilerOptions || {}
       tsConfig.compilerOptions.paths = tsConfig.compilerOptions.paths || {}
-      tsConfig.compilerOptions.paths['@nuxt-themes/tokens/tokens'] = [modulePath.resolve('./tokens.config.ts')]
       tsConfig.compilerOptions.paths['@nuxt-themes/tokens/config'] = [modulePath.resolve('./tokens.config.ts')]
     })
 
     await installModule(envModules.colorMode, { classSuffix: '' })
 
-    await installModule(envModules.pinceau, { configFileName: 'tokens.config', colorSchemeMode: 'class' })
+    await installModule(envModules.pinceau, { colorSchemeMode: 'class' })
   },
 })
 

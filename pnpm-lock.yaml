@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@antfu/eslint-config': ^0.35.1
-  '@nuxt-themes/typography': ^0.6.0
+  '@nuxt-themes/typography': ^0.7.0
   '@nuxt/content': ^2.4.3
   '@nuxt/module-builder': latest
   '@nuxtjs/color-mode': ^3.2.0
@@ -11,7 +11,7 @@ specifiers:
   eslint: ^8.33.0
   nuxt: ^3.1.1
   nuxt-icon: ^0.2.10
-  pinceau: ^0.13.4
+  pinceau: ^0.13.6
   release-it: ^15.6.0
   style-value-types: ^5.1.2
   typescript: ^4.9.5
@@ -19,11 +19,11 @@ specifiers:
 dependencies:
   '@nuxtjs/color-mode': 3.2.0
   '@vueuse/core': 9.12.0
-  pinceau: 0.13.4
+  pinceau: 0.13.6
 
 devDependencies:
   '@antfu/eslint-config': 0.35.1_4vsywjlpuriuw3tl5oq6zy5a64
-  '@nuxt-themes/typography': 0.6.0
+  '@nuxt-themes/typography': 0.7.0
   '@nuxt/content': 2.4.3
   '@nuxt/module-builder': 0.2.1
   '@vueuse/motion': 2.0.0-beta.25
@@ -970,12 +970,12 @@ packages:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.15.0
 
-  /@nuxt-themes/tokens/1.6.1:
-    resolution: {integrity: sha512-mEMFOpMwHmLQnvVbL7bSkKuYqR/8RXta6SaS0a0CqJLND901J934ADWFJf+/i/E1+rCerLUpROIbAx0Sx13jkA==}
+  /@nuxt-themes/tokens/1.7.1:
+    resolution: {integrity: sha512-iewFh9JNk3qLl3daENC2aNEQuELSD5mmYOahnayFjPhexmtGZXyNryxTaURch5mLOoBybD15csvPrnEXi8VQiA==}
     dependencies:
       '@nuxtjs/color-mode': 3.2.0
       '@vueuse/core': 9.12.0
-      pinceau: 0.12.7
+      pinceau: 0.13.6
     transitivePeerDependencies:
       - '@vue/composition-api'
       - postcss
@@ -985,10 +985,10 @@ packages:
       - vue
     dev: true
 
-  /@nuxt-themes/typography/0.6.0:
-    resolution: {integrity: sha512-RGLi4Ylu7KBr5JYyQQNOafNyDy707C81XjdzmbTznmmKb6VIa5z0rO7XwpsnZhA+wjRkXGJv9B1L+ABhxKEAIA==}
+  /@nuxt-themes/typography/0.7.0:
+    resolution: {integrity: sha512-p5RHI0BLrIfxuo5MVGeG1LacaM3e+8Mp1x6fLdKzqaRqMKoIFQaxzuhaGyxtgP1KtQefBNe2GHvav5dZPwRBjg==}
     dependencies:
-      '@nuxt-themes/tokens': 1.6.1
+      '@nuxt-themes/tokens': 1.7.1
       '@nuxtjs/color-mode': 3.2.0
       nuxt-config-schema: 0.4.4
       nuxt-icon: 0.2.10
@@ -1849,13 +1849,8 @@ packages:
       vue: 3.2.45
     dev: true
 
-  /@unocss/reset/0.49.0:
-    resolution: {integrity: sha512-OvLVSv4Q9lWXQYQWMvdhlufVV3UUvJ9jeh3OLTvYwkdxUovdGOK7IJfP0F9sEOth/wI7BD1Z6Zyn8A/gjJ9MQA==}
-    dev: true
-
-  /@unocss/reset/0.49.1:
-    resolution: {integrity: sha512-T1027YK21UDzhgA4qB+L1E8jhNY3dGHqCB15HqB63V5zgVLyw10Hmh0koinrkwtPhxDhLluURuu0tDm7/isvcA==}
-    dev: false
+  /@unocss/reset/0.49.2:
+    resolution: {integrity: sha512-O0dZDhIqUaB2Uwq2O9IVA2wqpC/kojTHWMGYNSw9OWoaVGyUAd5Ale+tB3RTw1QDbVQCasWIEmypbe0s+AI7xQ==}
 
   /@vercel/nft/0.22.6:
     resolution: {integrity: sha512-gTsFnnT4mGxodr4AUlW3/urY+8JKKB452LwF3m477RFUJTAaDmcz2JqFuInzvdybYIeyIv1sSONEJxsxnbQ5JQ==}
@@ -2319,7 +2314,6 @@ packages:
     engines: {node: '>=4'}
     dependencies:
       tslib: 2.4.1
-    dev: false
 
   /ast-types/0.15.2:
     resolution: {integrity: sha512-c27loCv9QkZinsa5ProX751khO9DJl/AcB5c2KNtA6NRvHKS0PgLfcftz72KVq504vB0Gku5s2kUZzDBvQWvHg==}
@@ -6613,7 +6607,6 @@ packages:
     resolution: {integrity: sha512-rT0koOL1kQ0CqxIS12FYrEuj6BTfQUn3QMj9led4QVBNw7s1MoF6owTGqwYF2FVPXMqVOxe+i6Ye8FGI7SXQCQ==}
     dependencies:
       recast: 0.20.5
-    dev: false
 
   /param-case/3.0.4:
     resolution: {integrity: sha512-RXlj7zCYokReqWpOPH9oYivUzLYZ5vAPIfEmCTNViosC78F8F0H9y7T7gG2M39ymgutxF5gcFEsyZQSph9Bp3A==}
@@ -6749,37 +6742,10 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /pinceau/0.12.7:
-    resolution: {integrity: sha512-hwLSbPLdCD271J9vNPYTlBVxmpJeEgdjoRWDKfl8n3F6+ZbW1K9qofzC/ggCjTJtyBT1NKRk6utUc/wMyoYQ4A==}
+  /pinceau/0.13.6:
+    resolution: {integrity: sha512-4yUwSqKJOosBaPyptGEgKyxbGvwF7zsdsZD3ZLlmxeue3v5/IHtsoDVUIw7H36//ucHc+JNzMRkddTIE7xKt8Q==}
     dependencies:
-      '@unocss/reset': 0.49.0
-      '@volar/vue-language-core': 1.0.24
-      acorn: 8.8.2
-      chroma-js: 2.4.2
-      consola: 2.15.3
-      csstype: 3.1.1
-      defu: 6.1.2
-      magic-string: 0.27.0
-      nanoid: 4.0.0
-      ohash: 1.0.0
-      postcss-custom-properties: 13.1.0
-      postcss-dark-theme-class: 0.7.3
-      postcss-nested: 6.0.0
-      recast: 0.22.0
-      scule: 1.0.0
-      style-dictionary-esm: 1.2.0
-      unbuild: 1.1.1
-      unplugin: 1.0.1
-    transitivePeerDependencies:
-      - postcss
-      - sass
-      - supports-color
-    dev: true
-
-  /pinceau/0.13.4:
-    resolution: {integrity: sha512-eD5QehCRtYrUcP+BiIFMZ9JKUe9PjduN/nqj9ouISbQswOmj4GN2swPArVqt14A+w2zS0zJw1rURJJN0IjRfjA==}
-    dependencies:
-      '@unocss/reset': 0.49.1
+      '@unocss/reset': 0.49.2
       '@volar/vue-language-core': 1.0.24
       acorn: 8.8.2
       chroma-js: 2.4.2
@@ -6802,7 +6768,6 @@ packages:
       - postcss
       - sass
       - supports-color
-    dev: false
 
   /pkg-types/1.0.1:
     resolution: {integrity: sha512-jHv9HB+Ho7dj6ItwppRDDl0iZRYBD0jsakHXtFgoLr+cHSF6xC+QL54sJmWxyGxOLYSHm0afhXhXcQDQqH9z8g==}
@@ -6868,21 +6833,6 @@ packages:
       postcss-value-parser: 4.2.0
     dev: true
 
-  /postcss-custom-properties/13.1.0:
-    resolution: {integrity: sha512-O0Lg0CuHwADctEMBgGtaeams7eFES8pXo/9zBClTbRVdU3LFAkFluw1l9eYnJ3rtidp80EGbAIuiisEIu1Z+uA==}
-    engines: {node: ^14 || ^16 || >=18}
-    peerDependencies:
-      postcss: ^8.4
-    peerDependenciesMeta:
-      postcss:
-        optional: true
-    dependencies:
-      '@csstools/cascade-layer-name-parser': 1.0.0_jhntdqzgrqlkpxki6fy253alji
-      '@csstools/css-parser-algorithms': 2.0.0_wcbxa2wg3evugsqpd27xwuyb6a
-      '@csstools/css-tokenizer': 2.0.0
-      postcss-value-parser: 4.2.0
-    dev: true
-
   /postcss-custom-properties/13.1.1:
     resolution: {integrity: sha512-FK4dBiHdzWOosLu3kEAHaYpfcrnMfVV4nP6PT6EFIfWXrtHH9LY8idfTYnEDpq/vgE33mr8ykhs7BjlgcT9agg==}
     engines: {node: ^14 || ^16 || >=18}
@@ -6896,7 +6846,6 @@ packages:
       '@csstools/css-parser-algorithms': 2.0.0_wcbxa2wg3evugsqpd27xwuyb6a
       '@csstools/css-tokenizer': 2.0.0
       postcss-value-parser: 4.2.0
-    dev: false
 
   /postcss-dark-theme-class/0.7.3:
     resolution: {integrity: sha512-M9vtfh8ORzQsVdT9BWb+xpEDAzC7nHBn7wVc988/JkEVLPupKcUnV0jw7RZ8sSj0ovpqN1POf6PLdt19JCHfhQ==}
@@ -7492,7 +7441,6 @@ packages:
       esprima: 4.0.1
       source-map: 0.6.1
       tslib: 2.4.1
-    dev: false
 
   /recast/0.22.0:
     resolution: {integrity: sha512-5AAx+mujtXijsEavc5lWXBPQqrM4+Dl5qNH96N2aNeuJFUzpiiToKPsxQD/zAIJHspz7zz0maX0PCtCTFVlixQ==}
