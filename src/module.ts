@@ -18,6 +18,10 @@ const module: any = defineNuxtModule({
     nuxt.hook(
       'pinceau:options',
       (options) => {
+        if (!options) {
+          return
+        }
+
         options.configLayers = options?.configLayers || []
         options.configLayers.push({
           cwd: modulePath.resolve(),
