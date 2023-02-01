@@ -11,12 +11,12 @@
       "import": "./dist/module.mjs",
       "require": "./dist/module.cjs"
     },
-    "./tokens": "./dist/tokens.config.ts",
-    "./config": "./dist/tokens.config.ts"
+    "./config": "./config.ts"
   },
   "files": [
     "dist",
-    "tokens"
+    "tokens",
+    "config.ts"
   ],
   "scripts": {
     "build": "unbuild",
