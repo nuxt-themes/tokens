@@ -16,4 +16,7 @@ export default defineNuxtConfig({
   colorMode: {
     classSuffix: '',
   },
+  build: {
+    transpile: ['nuxt/app'],
+  },
 })

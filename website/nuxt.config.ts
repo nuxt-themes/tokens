@@ -50,4 +50,8 @@ export default defineNuxtConfig({
   typescript: {
     includeWorkspace: true,
   },
+
+  build: {
+    transpile: ['nuxt/app'],
+  },
 })
