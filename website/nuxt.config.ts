@@ -3,6 +3,8 @@ import { createResolver } from '@nuxt/kit'
 const { resolve } = createResolver(import.meta.url)
 
 export default defineNuxtConfig({
+  extends: ['@nuxt-themes/typography'],
+
   app: {
     head: {
       title: '@nuxt-themes/tokens',
@@ -18,21 +20,9 @@ export default defineNuxtConfig({
 
   modules: ['../src/module', 'nuxt-icon', '@nuxt/content', '@vueuse/motion/nuxt'],
 
-  css: [
-    resolve('../node_modules/@nuxt-themes/typography/main.css'),
-  ],
-
   components: [
     {
       path: resolve('./components'),
-      global: true,
-    },
-    {
-      path: resolve('../node_modules/@nuxt-themes/typography/components'),
-      global: true,
-    },
-    {
-      path: resolve('../node_modules/@nuxt-themes/typography/components/global'),
       global: true,
     },
   ],

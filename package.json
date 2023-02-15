@@ -30,12 +30,12 @@
   "dependencies": {
     "@nuxtjs/color-mode": "^3.2.0",
     "@vueuse/core": "^9.12.0",
-    "pinceau": "^0.15.2"
+    "pinceau": "^0.15.3"
   },
   "devDependencies": {
     "style-value-types": "^5.1.2",
     "@antfu/eslint-config": "^0.35.2",
-    "@nuxt-themes/typography": "^0.8.0",
+    "@nuxt-themes/typography": "^0.8.2",
     "@nuxt/content": "^2.4.3",
     "@nuxt/module-builder": "latest",
     "@vueuse/motion": "2.0.0-beta.25",
