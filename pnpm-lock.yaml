@@ -11,7 +11,7 @@ specifiers:
   eslint: ^8.34.0
   nuxt: ^3.2.0
   nuxt-icon: ^0.2.11
-  pinceau: ^0.15.3
+  pinceau: ^0.15.4
   release-it: ^15.6.0
   style-value-types: ^5.1.2
   typescript: ^4.9.5
@@ -19,7 +19,7 @@ specifiers:
 dependencies:
   '@nuxtjs/color-mode': 3.2.0
   '@vueuse/core': 9.12.0
-  pinceau: 0.15.3
+  pinceau: 0.15.4
 
 devDependencies:
   '@antfu/eslint-config': 0.35.2_7kw3g6rralp5ps6mg3uyzz6azm
@@ -954,7 +954,7 @@ packages:
       '@nuxtjs/color-mode': 3.2.0
       nuxt-config-schema: 0.4.4
       nuxt-icon: 0.2.11
-      pinceau: 0.15.3
+      pinceau: 0.15.4
       ufo: 1.0.1
     transitivePeerDependencies:
       - postcss
@@ -6717,8 +6717,8 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /pinceau/0.15.3:
-    resolution: {integrity: sha512-1fo3SLZuFe/dm4JiFVAJaluJbA8ubMOeNEshrO7/edPu8k55hzZoVr2ZBHpfIzXKg/4wBTGyfu6mnvaDGc7AZg==}
+  /pinceau/0.15.4:
+    resolution: {integrity: sha512-QQwmaR7NdMBl0k8ok+Vw2kKl32Gv9nO6JindHQAWsSz/1U68o1L1iriH7u4GXE9GLm0DB8DT6Mn83G2LPd1Pbg==}
     dependencies:
       '@unocss/reset': 0.49.4
       '@volar/vue-language-core': 1.0.24
