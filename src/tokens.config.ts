@@ -32,44 +32,56 @@ export default defineTheme({
       ],
     },
     white: '#ffffff',
-    black: '#0B0A0A',
+    black: '#0E0D0D',
     gray: {
       50: '#FBFBFB',
-      100: '#F6F5F4',
+      100: '#F3F3F2',
       200: '#ECEBE8',
       300: '#DBD9D3',
       400: '#ADA9A4',
       500: '#97948F',
-      600: '#67635D',
-      700: '#36332E',
-      800: '#201E1B',
-      900: '#121110'
+      600: '#3D3B38',
+      700: '#292724',
+      800: '#1C1B19',
+      900: '#121110',
     },
     green: {
       50: '#ECFFF7',
-      100: '#DEFFF1',
-      200: '#C3FFE6',
+      100: '#DBFFF0',
+      200: '#C0FFE4',
       300: '#86FBCB',
       400: '#3CEEA5',
       500: '#0DD885',
-      600: '#00B467',
-      700: '#006037',
+      600: '#039B5A',
+      700: '#01492C',
       800: '#002817',
-      900: '#00190F'
+      900: '#00190F',
     },
     yellow: {
       50: '#FFFCEE',
-      100: '#FFF6D3',
-      200: '#FFF0B1',
+      100: '#FFF7D9',
+      200: '#FFF3C0',
       300: '#FFE372',
       400: '#FFDC4E',
       500: '#FBCA05',
-      600: '#CBA408',
-      700: '#614E02',
+      600: '#AB8A07',
+      700: '#463801',
       800: '#292100',
-      900: '#1B1500'
+      900: '#1B1500',
     },
     orange: {
+      50: '#FFF7F2',
+      100: '#FFEFE5',
+      200: '#FFE5D7',
+      300: '#FDAC7E',
+      400: '#FC8E51',
+      500: '#FA630E',
+      600: '#7E3004',
+      700: '#3F1802',
+      800: '#2D1102',
+      900: '#1A0A01',
+    },
+    pumpkin: {
       50: '#ffe9d9',
       100: '#ffd3b3',
       200: '#ffbd8d',
@@ -83,15 +95,15 @@ export default defineTheme({
     },
     red: {
       50: '#FFF9F8',
-      100: '#FFF3F0',
-      200: '#FFDED7',
+      100: '#FFF0EC',
+      200: '#FFE6E1',
       300: '#FFA692',
       400: '#FF7353',
       500: '#FF3B10',
-      600: '#BB2402',
-      700: '#701704',
+      600: '#AD2203',
+      700: '#550F00',
       800: '#340A01',
-      900: '#1C0301'
+      900: '#1C0301',
     },
     pear: {
       50: '#f7f8dc',
@@ -124,22 +136,22 @@ export default defineTheme({
       300: '#82E3FF',
       400: '#55E1FF',
       500: '#1AD6FF',
-      600: '#09A0C1',
-      700: '#024757',
+      600: '#0893B1',
+      700: '#013858',
       800: '#00232B',
-      900: '#001A1F'
+      900: '#001A1F',
     },
     blue: {
       50: '#F2FAFF',
-      100: '#DFF3FF',
-      200: '#C6EAFF',
+      100: '#E2F4FF',
+      200: '#D0EEFF',
       300: '#A1DDFF',
       400: '#64C7FF',
       500: '#1AADFF',
-      600: '#0069A6',
-      700: '#014267',
+      600: '#01659E',
+      700: '#013858',
       800: '#002235',
-      900: '#00131D'
+      900: '#00131D',
     },
     indigoblue: {
       50: '#d9e5ff',
@@ -165,7 +177,7 @@ export default defineTheme({
       800: '#160a62',
       900: '#0b0531',
     },
-    purple: {
+    violet: {
       50: '#ead9ff',
       100: '#d5b3ff',
       200: '#c08dff',
@@ -176,6 +188,18 @@ export default defineTheme({
       700: '#4c00a9',
       800: '#330070',
       900: '#190038',
+    },
+    purple: {
+      50: '#F8F5FF',
+      100: '#F1ECFF',
+      200: '#E5DCFF',
+      300: '#A589F9',
+      400: '#8961FD',
+      500: '#6B39FA',
+      600: '#370DAD',
+      700: '#200273',
+      800: '#14014A',
+      900: '#07001A',
     },
     pink: {
       50: '#ffd9f2',
@@ -201,10 +225,6 @@ export default defineTheme({
       800: '#700021',
       900: '#380011',
     },
-    shadow: {
-      initial: '{color.gray.400}',
-      dark: '{color.gray.800}'
-    }
   },
 
   width: {
@@ -258,14 +278,19 @@ export default defineTheme({
       ],
     },
     'none': '0px',
-    '2xs': '0.125rem',
-    'xs': '0.25rem',
-    'sm': '0.375rem',
-    'md': '0.5rem',
-    'lg': '0.75rem',
-    'xl': '1rem',
-    '2xl': '1.5rem',
-    '3xl': '1.75rem',
+    '4xs': '2px',
+    '3xs': '4px',
+    '2xs': '6px',
+    'xs': '8px',
+    'sm': '10px',
+    'md': '12px',
+    'lg': '14px',
+    'xl': '16px',
+    '2xl': '18px',
+    '3xl': '20px',
+    '4xl': '24px',
+    '5xl': '28px',
+    '6xl': '32px',
     'full': '9999px',
   },
 
@@ -544,48 +569,48 @@ export default defineTheme({
     default: {
       in: 'cubic-bezier(0.4, 0, 1, 1)',
       out: 'cubic-bezier(0, 0, 0.2, 1)',
-      inOut: 'cubic-bezier(0.4, 0, 0.2, 1)'
+      inOut: 'cubic-bezier(0.4, 0, 0.2, 1)',
     },
     sine: {
       in: 'cubic-bezier(0.12, 0, 0.39, 0)',
       out: 'cubic-bezier(0.61, 1, 0.88, 1)',
-      inOut: 'cubic-bezier(0.37, 0, 0.63, 1)'
+      inOut: 'cubic-bezier(0.37, 0, 0.63, 1)',
     },
     quad: {
       in: 'cubic-bezier(0.11, 0, 0.5, 0)',
       out: 'cubic-bezier(0.5, 1, 0.89, 1)',
-      inOut: 'cubic-bezier(0.45, 0, 0.55, 1)'
+      inOut: 'cubic-bezier(0.45, 0, 0.55, 1)',
     },
     cubic: {
       in: 'cubic-bezier(0.32, 0, 0.67, 0)',
       out: 'cubic-bezier(0.33, 1, 0.68, 1)',
-      inOut: 'cubic-bezier(0.65, 0, 0.35, 1)'
+      inOut: 'cubic-bezier(0.65, 0, 0.35, 1)',
     },
     quart: {
       in: 'cubic-bezier(0.5, 0, 0.75, 0)',
       out: 'cubic-bezier(0.25, 1, 0.5, 1)',
-      inOut: 'cubic-bezier(0.76, 0, 0.24, 1)'
+      inOut: 'cubic-bezier(0.76, 0, 0.24, 1)',
     },
     quint: {
       in: 'cubic-bezier(0.64, 0, 0.78, 0)',
       out: 'cubic-bezier(0.22, 1, 0.36, 1)',
-      inOut: 'cubic-bezier(0.83, 0, 0.17, 1)'
+      inOut: 'cubic-bezier(0.83, 0, 0.17, 1)',
     },
     expo: {
       in: 'cubic-bezier(0.7, 0, 0.84, 0)',
       out: 'cubic-bezier(0.16, 1, 0.3, 1)',
-      inOut: 'cubic-bezier(0.87, 0, 0.13, 1)'
+      inOut: 'cubic-bezier(0.87, 0, 0.13, 1)',
     },
     circ: {
       in: 'cubic-bezier(0.55, 0, 1, 0.45)',
       out: 'cubic-bezier(0, 0.55, 0.45, 1)',
-      inOut: 'cubic-bezier(0.85, 0, 0.15, 1)'
+      inOut: 'cubic-bezier(0.85, 0, 0.15, 1)',
     },
     back: {
       in: 'cubic-bezier(0.36, 0, 0.66, -0.56)',
       out: 'cubic-bezier(0.34, 1.56, 0.64, 1)',
-      inOut: 'cubic-bezier(0.68, -0.6, 0.32, 1.6)'
-    }
+      inOut: 'cubic-bezier(0.68, -0.6, 0.32, 1.6)',
+    },
   },
 
   utils: {
@@ -627,6 +652,12 @@ export default defineTheme({
     text: (size: keyof PinceauTheme['text']) => ({
       fontSize: `{text.${size}.fontSize}`,
       lineHeight: `{text.${size}.lineHeight}`,
+    }),
+    gradientText: (gradient: string) => ({
+      '-webkit-text-fill-color': 'transparent',
+      'backgroundImage': gradient,
+      '-webkit-background-clip': 'text',
+      'backgroundClip': 'text',
     }),
   },
 })
