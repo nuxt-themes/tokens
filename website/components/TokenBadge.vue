@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { useMotion } from '@vueuse/motion'
-
 const props = defineProps({
   token: {
     type: Object as any,
