@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { useMotion } from '@vueuse/motion'
-
 const props = defineProps({
   clipboardState: {
     type: String,
