@@ -28,22 +28,22 @@
     "release": "release-it"
   },
   "dependencies": {
-    "@nuxtjs/color-mode": "^3.2.0",
-    "@vueuse/core": "^10.1.2",
-    "pinceau": "^0.18.9"
+    "@nuxtjs/color-mode": "^3.3.0",
+    "@vueuse/core": "^10.2.0",
+    "pinceau": "^0.19.1"
   },
   "devDependencies": {
     "style-value-types": "^5.1.2",
-    "@antfu/eslint-config": "^0.39.3",
-    "@nuxt-themes/typography": "^0.11.0",
-    "@nuxt/content": "^2.6.0",
+    "@antfu/eslint-config": "^0.39.5",
+    "@nuxt-themes/typography": "^1.0.0",
+    "@nuxt/content": "^2.7.0",
     "@nuxt/module-builder": "latest",
-    "@vueuse/motion": "2.0.0-beta.29",
-    "eslint": "^8.41.0",
-    "nuxt": "^3.5.1",
+    "@vueuse/motion": "2.0.0",
+    "eslint": "^8.43.0",
+    "nuxt": "^3.6.1",
     "nuxt-icon": "^0.4.1",
-    "release-it": "^15.10.3",
-    "typescript": "^5.0.4"
+    "release-it": "^15.11.0",
+    "typescript": "^5.1.5"
   },
   "pnpm": {
     "peerDependencyRules": {
