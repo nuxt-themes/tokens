@@ -11,7 +11,7 @@ specifiers:
   eslint: ^8.46.0
   nuxt: ^3.6.5
   nuxt-icon: ^0.5.0
-  pinceau: ^0.20.0
+  pinceau: ^0.20.1
   release-it: ^16.1.3
   style-value-types: ^5.1.2
   typescript: ^5.1.6
@@ -19,7 +19,7 @@ specifiers:
 dependencies:
   '@nuxtjs/color-mode': 3.3.0
   '@vueuse/core': 10.3.0
-  pinceau: 0.20.0
+  pinceau: 0.20.1
 
 devDependencies:
   '@antfu/eslint-config': 0.40.2_7haavtekmro7ptbnqmctjaodju
@@ -1155,7 +1155,7 @@ packages:
       '@nuxt/kit':
         optional: true
     dependencies:
-      consola: 3.2.2
+      consola: 3.2.3
       mlly: 1.4.0
       mri: 1.2.0
       pathe: 1.1.1
@@ -2976,11 +2976,6 @@ packages:
   /consola/3.1.0:
     resolution: {integrity: sha512-rrrJE6rP0qzl/Srg+C9x/AE5Kxfux7reVm1Wh0wCjuXvih6DqZgqDZe8auTD28fzJ9TF0mHlSDrPpWlujQRo1Q==}
 
-  /consola/3.2.2:
-    resolution: {integrity: sha512-r921u0vbF4lQsoIqYvSSER+yZLPQGijOHrYcWoCNVNBZmn/bRR+xT/DgerTze/nLD9TTGzdDa378TVhx7RDOYg==}
-    engines: {node: ^14.18.0 || >=16.10.0}
-    dev: true
-
   /consola/3.2.3:
     resolution: {integrity: sha512-I5qxpzLv+sJhTVEoLYNcTW+bThDCPsit0vLNKShZx6rLtpilNpmmeTPaeqJb9ZE9dV3DGaeby6Vuhrw38WjeyQ==}
     engines: {node: ^14.18.0 || >=16.10.0}
@@ -3703,7 +3698,7 @@ packages:
     resolution: {integrity: sha512-gozW2blMLJCeFpBwugLTGyvVjNoeo1knonXAcatC6bjPBZitotxdWf7Gimr25N4c0AAOo4eOUfaG82IJPDpqCA==}
     dependencies:
       debug: 3.2.7
-      is-core-module: 2.12.1
+      is-core-module: 2.13.0
       resolve: 1.22.4
     transitivePeerDependencies:
       - supports-color
@@ -6273,8 +6268,8 @@ packages:
   /mlly/1.3.0:
     resolution: {integrity: sha512-HT5mcgIQKkOrZecOjOX3DJorTikWXwsBfpcr/MGBkhfWcjiqvnaL/9ppxvIUXfjT6xt4DVIAsN9fMUz1ev4bIw==}
     dependencies:
-      acorn: 8.8.2
-      pathe: 1.1.0
+      acorn: 8.10.0
+      pathe: 1.1.1
       pkg-types: 1.0.3
       ufo: 1.1.2
 
@@ -7091,8 +7086,8 @@ packages:
       - supports-color
     dev: true
 
-  /pinceau/0.20.0:
-    resolution: {integrity: sha512-ujV46OeGtiQZqovKB4RGUxdCipACL++evDocpRMHi856aIM1UgmG7JzNiv3LOcK6cCe8Ey8ismuHiBbtM7WKHQ==}
+  /pinceau/0.20.1:
+    resolution: {integrity: sha512-A6EEYijgSudIbmZH9opFxBLqprFFxaTMhzJM8GcpE0J41VNZa5kPh/3zv2s4Q7gTm1jjbyUyZPIuF4BsNXP6Nw==}
     dependencies:
       '@unocss/reset': 0.54.2
       '@volar/vue-language-core': 1.6.5
@@ -8984,13 +8979,13 @@ packages:
       escape-string-regexp: 5.0.0
       fast-glob: 3.2.12
       local-pkg: 0.4.3
-      magic-string: 0.30.0
+      magic-string: 0.30.2
       mlly: 1.4.0
       pathe: 1.1.1
       pkg-types: 1.0.3
       scule: 1.0.0
       strip-literal: 1.0.1
-      unplugin: 1.3.1
+      unplugin: 1.4.0
     transitivePeerDependencies:
       - rollup
 
